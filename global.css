@@ -1,0 +1,51 @@
+@charset "utf-8";
+@font-face{
+    font-family: 'Antapani';
+    src: url('res/font/antapani-extrabold-webfont.woff') format('woff'),
+         url('res/font/antapani-extrabold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CHANGE COLORS HERE */
+:root{
+	--bmGreen: rgb(0, 100, 66);
+    --bmGold: rgb(217, 208, 162);
+}
+
+html{
+    scroll-behavior: smooth;
+    transition: all .382s ease-in-out;
+}
+a:link{
+    color: var(--bmGreen);
+}
+a:hover{
+    color: rgb(25, 155, 110);
+}
+a:visited{
+    color: var(--bmGold);
+}
+
+
+/*******************************************************************/
+/*                           Font Stuff                            */
+/*******************************************************************/
+.fontHeader{
+    color: #222;
+    font-family: 'Antapani', Helvetica, sans-serif;
+    font-size: 3vw;
+}
+.fontSubHeader{
+    color: var(--document-text-color);
+    font-family: 'Antapani', Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 1.5vw;
+}
+.fontInfo{
+    font-family: 'Antapani', Helvetica, sans-serif;
+    font-size: 1.15vw;
+    color: #9F9F9F
+}
+
+/* Ramsey Shaban 2020 */

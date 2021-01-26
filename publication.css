@@ -1,0 +1,58 @@
+.noselect { /* Clicking rapidly on the div will highlight random text. This stops that. */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                       supported by Chrome, Edge, Opera and Firefox */
+}
+.loaded{
+    transition: all .382s ease-in-out; /* 3! 8! 2! */
+}
+.reading{
+    transition: all .382s ease-in-out; /* 3! 8! 2! */
+}
+.pageButton{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 2.5vw;
+    height: 2.5vw;
+    position: relative;
+    display: inline-block;
+    color: var(--default-text-color);
+    background-color: rgb(0, 100, 66);
+    transition: color .15s ease-in-out;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 2.2vw;
+}
+.pageButton:hover{
+    color: rgb(217, 208, 162);
+}
+.open{
+    color: rgb(217, 208, 162);
+}
+.fontTag{ /* Small, rounded buttons. Custom for cards in Publication List */
+    background-color: #111;
+    color: #9F9F9F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75vw;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+    display: inline-block;
+    opacity: .67;
+}
+.fontTag:hover{
+    transition: opacity .382 ease-in-out;
+    opacity: 1;
+}
+.pubReading{
+    font-family: Calibri, sans-serif;
+}
+.pubReading h1{
+    font-family: Calibri, sans-serif;
+}

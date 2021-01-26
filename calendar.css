@@ -1,0 +1,14 @@
+@charset "utf-8";
+.cal [title='calendar']{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+[title='calendar']{
+    max-width: 65vw;
+}
+[tkf-wrap-guid="tkf-client-window-wrap-fullcalendar-1"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
