@@ -85,8 +85,8 @@
                     max-width: 2vw;
                     ">
                 </a>
-                <a href="https://twitter.com/usf_bullsmedia">
-                    <img src="res/img/twitter.png" target="_blank" alt="Twitter Logo" style="
+                <a href="https://twitter.com/usf_bullsmedia"> <!-- Funky image name to bypass uBlock list 8) -->
+                    <img src="res/img/twitterZ.png" target="_blank" alt="Twitter Logo" style="
                     position: relative;
                     margin-left: 3vw;
                     max-width: 2vw;
@@ -101,6 +101,8 @@
                 </a>
             </div>
         </div>
+
+        <!-- Top + What We Do -->
         <div id="topBox" style="position: relative; top: -5.5vw;">
             <!-- Top box -->
             <div style="display: flex;
@@ -108,7 +110,7 @@
                 align-items: center;
                 position: relative;
                 width: 100%;
-                height: 60vw;
+                height: 75vw;
                 background-image: url(res/img/bgTop.jpg);
                 background-size: cover;">
                 <img style="position: relative;
@@ -117,37 +119,6 @@
                 box-shadow: #000;"
                 src="res/img/fgTop.png" 
                 alt="The Bulls Media logo."/>
-                <!--
-                <div style="display: flex;
-                flex-direction: row;
-                justify-items: center;
-                align-items: center;
-                margin-top: 7vw;">
-                    <div class="hoverGold" style="display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-right: 3vw;
-                    top: -20px;
-                    width: 30vw;
-                    height: 6vw;
-                    border-radius: 3vw;
-                    font-family: 'Antapani', sans-serif;
-                    font-size: 3.5vw;
-                    color: #fff;">
-                    WHO ARE WE?</div>
-                    <div class="hoverGold" style="display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-left: 3vw;
-                    top: -20px;
-                    width: 30vw;
-                    height: 6vw;
-                    border-radius: 3vw;
-                    font-family: 'Antapani', sans-serif;
-                    font-size: 3.5vw;
-                    color: #fff;">
-                    GET INVOLVED</div>
-                </div>-->
             </div>
 
             <!-- What We Do -->
@@ -156,44 +127,58 @@
             align-items: center;
             position: relative;">
                 <!-- What we do box -->
-                <div id="what-we-do" style="position: relative; top: -15.5vw; height: 12vw;"></div>
-                <div style="position: absolute;
-                    height: 30vw;
+                <div id="what-we-do" style="position: relative; top: -23.5vw;"></div>
+                <div style="display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    height: 40vw;
                     top: -10vw;
-                    width: 55vw;">
-                    <div style="position: absolute;
+                    width: 100%;
+                    background-color: var(--bmGreen);">
+                    <div style="z-index: 3;
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         background-color: var(--bmGreen);
                         border-radius: 50px;
-                        width: 59vw;
-                        top: 2vw;
-                        left: -2vw;
-                        height: 20vw;">
+                        width: 22vw;
+                        top: -8vw;
+                        left: 25vw;
+                        height: 7vw;">
+                        <div class="boldText" style="
+                            font-size: 3vw;
+                            color: #fff;">
+                            What We Do
+                        </div>
                     </div>
                     <div style="display: flex;
                         flex-direction: column;
-                        justify-content: center;
+                        align-items: center;
                         position: relative;
-                        height: 20vw;
+                        top: -5vw;
+                        height: 40vw;
+                        width: 65vw;
                         border-radius: 50px;
                         background-color: #fff;
                         color: #222">
-                        <div class="boldText" style="position: relative;
-                            margin-left: 3vw;
-                            margin-bottom: 2vw;
-                            margin-top: -.5vw;
-                            font-size: 3vw;">
-                            What We Do
-                        </div>
                         <div class="descText" style="position: relative;
-                            margin-left: 3vw;
-                            width: 50vw;
-                            font-size: 1.25vw;">
-                            We are an interdisciplinary organization on campus focused on providing 
-                            students with opportunities in the fields of media and culture, providing facilities and equipment for 
-                            students to highlight their own talents and creations, along with other on campus resources to 
-                            serve our USF community! With our state-of-the-art recording studio, equipment, radio services, and events,
-                            you're sure to find something that can help you.
+                            margin-top: 7vw;
+                            width: 42vw;
+                            font-size: 1.5vw;
+                            text-align: center;">
+                            We are an <b>interdisciplinary organization</b> on campus focused on providing 
+                            students with opportunities in the fields of <b>media and culture,</b> providing facilities and equipment for 
+                            students to highlight their own <b>talents and creations,</b> along with other on campus resources to 
+                            serve our USF community! With our <b>state-of-the-art</b> recording studio, equipment, radio services, and events,
+                            you're sure to find something that can help you <b>follow your passion.</b>
                         </div>
+                        <img src="res/img/microphone.jpg" alt="A microphone" style="position: absolute;
+                            border-radius: 50px;
+                            width: 25vw;
+                            left: -10vw;
+                            top: 22.5vw;">
                     </div>
                 </div>
             </div>
@@ -235,7 +220,7 @@
                         background-color: #22adaf;
                         transition: inherit;"
                         onclick="(function(){
-                        window.location='publication.html';
+                        window.location = 'https://usf.campuslabs.com/engage/submitter/form/start/304939';
                         })();">
                         <div class="serviceText" style="position: absolute;
                             font-family: 'museo-sans', Arial, sans-serif;
@@ -261,7 +246,8 @@
                             text-align: center;
                             font-family: 'museo-sans', Arial, Helvetica, sans-serif;
                             transition: inherit;">
-                            Rent Equipment</div>
+                            Rent Equipment<br/>
+                            (Under Construction)</div>
                         <img src="res/img/serviceRecording.png" class="serviceImg" style="position: absolute;
                             width: 27vw; 
                             background-color: #f9c13a;
@@ -283,9 +269,12 @@
                             font-family: 'museo-sans', Arial, Helvetica, sans-serif;
                             transition: inherit;
                             font-size: 2.5vw;">
-                            Book our Podcast Room</div>
+                            Book our Podcast Room<br/>
+                            (Under Construction)</div>
                         <img src="res/img/servicePodcast.png" class="serviceImg" style="position: relative;
                             width: 21vw;
+                            padding-left: 2vw;
+                            padding-right: 2vw;
                             background-color: #8db141;
                             transition: inherit;">
                     </div>
@@ -304,9 +293,13 @@
                             text-align: center;
                             font-family: 'museo-sans', Arial, Helvetica, sans-serif;
                             transition: inherit;">
-                            Book our Recording Room</div>
+                            Book our Recording Room<br/>
+                            (Under Construction)
+                        </div>
                         <img src="res/img/serviceProduction.png" class="serviceImg" style="position: relative;
                             width: 24vw;
+                            padding-left: 1vw;
+                            padding-right: 1vw;
                             background-color: #e95536;
                             transition: inherit;">
                     </div>
@@ -330,50 +323,19 @@
                 width: 50%;
                 font-family: 'Antapani', Helvetica, sans-serif;
                 text-align: center;
-                font-size: 7vw;
+                font-size: 4vw;
                 color: var(--bmGold)">
-                Read Our Digital Publication
+                Read Our Digital Publication <br/> (Under Construction)
             </div>
             <div style="z-index: 1;
                 position: absolute;
-                top: 7vw;
                 right: 5vw;
                 width: 40vw;
                 font-family: 'Antapani', Helvetica, sans-serif;
                 text-align: center;
-                font-size: 5vw;
+                font-size: 4vw;
                 color: var(--bmGold)">
-
-
-                <!--
-                <div style="position: relative;
-                    width: 40vw;
-                    height: 10vw;">
-                    <a href="https://twitter.com/usf_bullsmedia">
-                        <img src="res/img/twitter.png" alt="Twitter Logo" style="
-                        position: absolute;
-                        left: 0vw;
-                        top: 2vw;
-                        max-width: 4vw;
-                        ">
-                    </a>
-                    <a href="https://www.instagram.com/usf_bullsmedia/">
-                        <img src="res/img/instagram.png" alt="LinkedIn Logo" style="
-                        position: absolute;
-                        left: 5vw;
-                        top: 2vw;
-                        max-width: 4vw;
-                        ">
-                    </a>
-                    <a href="">
-                        <img src="res/img/linkedin.png" alt="LinkedIn Logo" style="
-                        position: absolute;
-                        left: 10vw;
-                        top: 2vw;
-                        max-width: 4vw;
-                        ">
-                    </a>
-                </div>-->
+                View our Event Calendar <br/> (Under Construction)
             </div>
             <div class="hoverFade" style="display: inline-block;
                 z-index: 3;
@@ -508,7 +470,7 @@
                         text-shadow: 10px 10px #EDEBD1;
                         font-size: 2.3vw;">
                         Paula Marcatto</div>
-                    <div class="fontInfo" style="color: #222;"><em>Programming Coordinator</em></div>
+                    <div class="fontInfo" style="color: #222;"><em>Outreach Coordinator</em></div>
                     <div class="fontInfo" style="font-size: 1vw;"><em><a href=mailto:BullsMedia-ProgramCoord@usf.edu>BullsMedia-ProgramCoord@usf.edu</a></em></div>
                 </div>
                 <div style="display: flex;
