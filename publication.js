@@ -1,7 +1,3 @@
-/*
-lol enjoy.
-*/
-
 document.body.querySelector("#jsNotify").remove(); /* Ensure JS is enabled */
 
 /* Module regarding the pubSearch div 
@@ -124,7 +120,7 @@ var pubSearch = (function(){
         
             /* Button */{
             var updateButton = document.createElement("button");
-            updateButton.style.backgroundImage = "url(../res/img/update.png)";
+            updateButton.style.backgroundImage = "url(../res/img/update.webp)";
             updateButton.style.backgroundColor = "#eee";
             updateButton.style.backgroundSize = "contain";
             updateButton.style.border = "none";
@@ -141,7 +137,7 @@ var pubSearch = (function(){
         
             /* Spacer */{
             var spacer = document.createElement("div");
-            spacer.style.height = "5vh";
+            // spacer.style.height = "0vw";
             }
 
             parent.appendChild(textSearch);
@@ -273,7 +269,11 @@ var pubList = (function(){
             var featuredPanel = document.createElement("div");
             featuredPanel.style.position = "relative";
             featuredPanel.style.width = "65.5vw";
-            featuredPanel.style.height = "15vw";
+            featuredPanel.style.height = "14.5vw";
+            featuredPanel.style.display = "flex";
+            featuredPanel.style.flexDirection = "row";
+            featuredPanel.style.justifyItems = "center";
+            featuredPanel.style.alignContent = "center";
             featuredPanel.style.marginBottom = "3vw";
             featuredPanel.style.backgroundColor ="#fff";
             featuredPanel.style.boxShadow = "0px 5px 20px 3px #888888";
@@ -289,9 +289,9 @@ var pubList = (function(){
 
                 /* parent */
                 var featuredCard = document.createElement("div");
-                featuredCard.style.width = "7vw";
-                featuredCard.style.height = "5vw";
-                featuredCard.style.margin = "2vw";
+                featuredCard.style.width = "30vw";
+                featuredCard.style.height = "10vw";
+                featuredCard.style.margin = "2.25vw";
                 featuredCard.style.backgroundColor = "#888";
 
                 var pubFeatured = document.querySelector("#pubFeatured");
@@ -429,7 +429,7 @@ var pubList = (function(){
                 childBackButton.style.border = "0";
                 childBackButton.style.borderRadius = "5px";
                 childBackButton.style.backgroundColor = "#eee";
-                childBackButton.style.backgroundImage = "url(../res/img/back.png)";
+                childBackButton.style.backgroundImage = "url(../res/img/back.webp)";
                 childBackButton.style.backgroundSize = "contain";
                 var searchTerms = pubSearch.getSearchTerms();
                 childBackButton.onclick = function(){
@@ -548,10 +548,12 @@ var pubPage = (function (){
             var pageParent = document.createElement("div");
             pageParent.classList.add("noselect");
             pageParent.id = "pageParent";
+            pageParent.style.marginTop = "2vw";
             pageParent.style.position = "relative";
-            pageParent.style.display = "inline-block";
+            pageParent.style.display = "flex";
+            pageParent.style.flexDirection = "row";
+            pageParent.style.justifyContent = "center";
             pageParent.style.height = "2.5vw";
-            pageParent.style.left = "46.25vw";
 
             var pagePrev = document.createElement("div");
             pagePrev.classList.add("pageButton");
@@ -615,19 +617,10 @@ var pubPage = (function (){
             var numberButtons = document.createElement("div");
             numberButtons.id = "nb";
             numberButtons.classList.add("noselect");
-            numberButtons.style.position = "relative";
-            numberButtons.style.display = "inline-block";
-            numberButtons.style.bottom = "+2.5vw";
-            if (numOfButtons >= 5){
-                numberButtons.style.maxWidth = "12.5vw";
-                numberButtons.style.left = "36.25vw";
-            } else if (numOfButtons < 5 && numOfButtons > 2){
-                numberButtons.style.maxWidth = "12vw";
-                numberButtons.style.left = "35vw";
-            } else {
-                numberButtons.style.maxWidth = "8vw";
-                numberButtons.style.left = "40vw";
-            }
+            numberButtons.style.position = "absolute";
+            numberButtons.style.display = "flex";
+            numberButtons.style.flexDirection = "row";
+            numberButtons.style.marginBottom = "3vw";
             for (var i = 0; i < numOfButtons; i++){
                 (function(j){ /* Prevents unintended closure */
                     var childNumberButton = document.createElement("div");
@@ -673,7 +666,7 @@ var pubPage = (function (){
 })();
 
 /* Start after everything loads */
-window.addEventListener('load', function () {
+window.addEventListener('load', function (){
     pubPage.createPageButtons();
     pubSearch.createSearchElements(); /* Second in line because of dependency on an element created by createPageButtons */
     pubList.getFeatured();
