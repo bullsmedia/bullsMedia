@@ -4,12 +4,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Bulls Media</title>
     </head>
-    <body style="margin: 0;">
+    <body style="margin: 0; overflow: hidden;">
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <link rel="stylesheet" type="text/css" href="global.css"/>
         <link rel="stylesheet" type="text/css" href="index.css"/>
         <link rel="stylesheet" type="text/css" href="https://use.typekit.net/tln6exz.css"/>
-        <div id="top"></div>
+
 
         <!-- Sticky header -->
         <div style="position: relative; top: 0; height: 5.5vw;"></div>
@@ -25,7 +25,7 @@
             background-color: var(--bmGreen);
             ">
             <a href="index.html#top" style="position: relative; left: 0; top: .2vw;">
-                <img src="res/img/bmLogo.png" alt="The Bulls Media Logo" style="max-width: 6vw;">
+                <img src="res/img/bmLogo.webp" alt="The Bulls Media Logo" style="max-width: 6vw;">
             </a>
             <div style="position: relative;
                 top: -.25vw;
@@ -71,7 +71,7 @@
                 Contact Us</a>
             <div style="display: flex; flex-direction: row; align-items: center; position: absolute; right: 0; height: 5.5vw; width: 17vw;">
                 <!-- <a href="">
-                    <img src="res/img/facebook.png" alt="Facebook Logo" style="
+                    <img src="res/img/facebook.webp" alt="Facebook Logo" style="
                     position: absolute;
                     left: 80vw;
                     top: 1vw;
@@ -79,21 +79,21 @@
                     ">
                 </a> -->
                 <a href="https://www.instagram.com/usf_bullsmedia/">
-                    <img src="res/img/instagram.png" target="_blank" alt="LinkedIn Logo" style="
+                    <img src="res/img/instagram.webp" target="_blank" alt="LinkedIn Logo" style="
                     position: relative;
                     margin-left: 3vw;
                     max-width: 2vw;
                     ">
                 </a>
                 <a href="https://twitter.com/usf_bullsmedia"> <!-- Funky image name to bypass uBlock list 8) -->
-                    <img src="res/img/twitterZ.png" target="_blank" alt="Twitter Logo" style="
+                    <img src="res/img/twitterZ.webp" target="_blank" alt="Twitter Logo" style="
                     position: relative;
                     margin-left: 3vw;
                     max-width: 2vw;
                     ">
                 </a>
                 <a href="https://www.linkedin.com/company/bulls-media">
-                    <img src="res/img/linkedin.png" target="_blank" alt="LinkedIn Logo" style="
+                    <img src="res/img/linkedin.webp" target="_blank" alt="LinkedIn Logo" style="
                     position: relative;
                     margin-left: 3vw;
                     max-width: 2vw;
@@ -103,82 +103,110 @@
         </div>
 
         <!-- Top + What We Do -->
-        <div id="topBox" style="position: relative; top: -5.5vw;">
-            <!-- Top box -->
-            <div style="display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                width: 100%;
-                height: 75vw;
-                background-image: url(res/img/bgTop.jpg);
-                background-size: cover;">
-                <img style="position: relative;
-                width: 30vw;
-                top: -10vw;
-                box-shadow: #000;"
-                src="res/img/fgTop.png" 
-                alt="The Bulls Media logo."/>
-            </div>
-
-            <!-- What We Do -->
-            <div style="display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;">
-                <!-- What we do box -->
-                <div id="what-we-do" style="position: relative; top: -23.5vw;"></div>
+        <div id="topBox" style="position: relative; top: -5.5vw; overflow: auto; scroll-behavior: smooth;">
+            <div id="top"></div>
+            <div style="position: relative;
+            height: 100vh;">
+                <!-- Top box -->
                 <div style="display: flex;
                     justify-content: center;
                     align-items: center;
                     position: relative;
-                    height: 40vw;
-                    top: -10vw;
                     width: 100%;
-                    background-color: var(--bmGreen);">
-                    <div style="z-index: 3;
-                        position: absolute;
-                        display: flex;
+                    height: 75vw;
+                    background-image: url(res/img/bgTop.webp);
+                    background-size: cover;">
+                    <img style="position: relative;
+                    width: 30vw;
+                    top: -10vw;
+                    box-shadow: #000;"
+                    src="res/img/fgTop.webp" 
+                    alt="The Bulls Media logo."/>
+                </div>
+                <!-- What We Do -->
+                <div style="display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;">
+                    <!-- What we do box -->
+                    <div id="what-we-do" style="position: relative; top: -13.5vw;"></div>
+                    <div style="display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color: var(--bmGreen);
-                        border-radius: 50px;
-                        width: 22vw;
-                        top: -8vw;
-                        left: 25vw;
-                        height: 7vw;">
-                        <div class="boldText" style="
-                            font-size: 3vw;
-                            color: #fff;">
-                            What We Do
-                        </div>
-                    </div>
-                    <div style="display: flex;
-                        flex-direction: column;
-                        align-items: center;
                         position: relative;
-                        top: -5vw;
-                        height: 40vw;
-                        width: 65vw;
-                        border-radius: 50px;
-                        background-color: #fff;
-                        color: #222">
-                        <div class="descText" style="position: relative;
-                            margin-top: 7vw;
-                            width: 42vw;
-                            font-size: 1.5vw;
-                            text-align: center;">
-                            We are an <b>interdisciplinary organization</b> on campus focused on providing 
-                            students with opportunities in the fields of <b>media and culture,</b> providing facilities and equipment for 
-                            students to highlight their own <b>talents and creations,</b> along with other on campus resources to 
-                            serve our USF community! With our <b>state-of-the-art</b> recording studio, equipment, radio services, and events,
-                            you're sure to find something that can help you <b>follow your passion.</b>
+                        height: 65vw;
+                        width: 100%;
+                        background-color: var(--bmGreen);">
+                        <div style="z-index: 3;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: var(--bmGreen);
+                            border-radius: 50px;
+                            width: 22vw;
+                            top: -8vw;
+                            left: 25vw;
+                            height: 7vw;">
+                            <div class="boldText" style="
+                                font-size: 3vw;
+                                color: #fff;">
+                                What We Do
+                            </div>
                         </div>
-                        <img src="res/img/microphone.jpg" alt="A microphone" style="position: absolute;
+                        <div style="display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            position: relative;
+                            top: -7vw;
+                            height: 60vw;
+                            width: 65vw;
+                            border-radius: 50px;
+                            background-color: #fff;
+                            color: #222;
+                            box-shadow: 10px 10px 20px 2px #2226;">
+                            <div class="descText" style="position: relative;
+                                margin-top: 7vw;
+                                width: 42vw;
+                                font-size: 1.5vw;
+                                text-align: center;">
+                                We are an <b>interdisciplinary organization</b> on campus focused on providing 
+                                students with opportunities in the fields of <b>media and culture,</b> providing facilities and equipment for 
+                                students to highlight their own <b>talents and creations,</b> along with other on campus resources to 
+                                serve our USF community! With our <b>state-of-the-art</b> recording studio, equipment, radio services, and events,
+                                you're sure to find something that can help you <b>follow your passion.</b>
+                            </div>
+                            <div class="descText" style="position: relative;
+                                margin-top: 4vw;
+                                margin-left: 17vw;
+                                width: 35vw;
+                                font-size: 1.5vw;
+                                text-align: left;">
+                                <b>Our recording studio</b> has state-of-the-art equipment, including instruments, computers, and professional-grade 
+                                software. Best of all, our entire suite is free to use for all USF students! Bulls Media fosters students' creativity
+                                so anyone can make their dreams a reality. Come use our tools and <b>realize your creative potential.</b>
+                            </div>
+                            <div class="descText" style="position: relative;
+                                margin-top: 9vw;
+                                margin-right: 17vw;
+                                width: 35vw;
+                                font-size: 1.5vw;
+                                text-align: left;"> 
+                                Have some free time? Why not check out our <b>podcast station</b>? Come turn your ideas into reality, and <b>let your voice be heard!</b>
+                            </div>
+
+
+                            <img src="res/img/microphone.webp" alt="A microphone" style="position: absolute;
+                                border-radius: 50px;
+                                width: 25vw;
+                                left: -7vw;
+                                top: 22.5vw;"/>
+                            <img src="res/img/frontImg2.webp" alt="Two people talking in front of microphones" style="position: absolute;
                             border-radius: 50px;
                             width: 25vw;
-                            left: -10vw;
-                            top: 22.5vw;">
+                            left: 45vw;
+                            top: 42vw;"/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -196,8 +224,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-top: 1vw;
                 height: 8vw;
-                font-size: 5vw;
+                font-size: 4vw;
                 font-family: 'Antapani', Arial, sans-serif;">
                 Services</div>
             <div id="serviceParent" style="display: grid;
@@ -207,7 +236,7 @@
                 max-width: 70vw;
                 position: relative;
                 transition: all .382s ease-in-out;
-                margin-bottom: 3vw;">
+                margin-bottom: 15vw;">
                     <div id="serviceDJ" style="position: relative;
                         display: flex;
                         justify-content: center;
@@ -226,7 +255,7 @@
                             font-family: 'museo-sans', Arial, sans-serif;
                             transition: inherit;">
                             Hire our DJs</div>
-                        <img src="res/img/serviceDJ.png" class="serviceImg" style="position: absolute;
+                        <img src="res/img/serviceDJ.webp" class="serviceImg" style="position: absolute;
                             width: 22vw;
                             background-color: #22adaf;
                             transition: inherit;">
@@ -248,7 +277,7 @@
                             transition: inherit;">
                             Rent Equipment<br/>
                             (Under Construction)</div>
-                        <img src="res/img/serviceRecording.png" class="serviceImg" style="position: absolute;
+                        <img src="res/img/serviceRecording.webp" class="serviceImg" style="position: absolute;
                             width: 27vw; 
                             background-color: #f9c13a;
                             transition: inherit;">
@@ -271,7 +300,7 @@
                             font-size: 2.5vw;">
                             Book our Podcast Room<br/>
                             (Under Construction)</div>
-                        <img src="res/img/servicePodcast.png" class="serviceImg" style="position: relative;
+                        <img src="res/img/servicePodcast.webp" class="serviceImg" style="position: relative;
                             width: 21vw;
                             padding-left: 2vw;
                             padding-right: 2vw;
@@ -296,7 +325,7 @@
                             Book our Recording Room<br/>
                             (Under Construction)
                         </div>
-                        <img src="res/img/serviceProduction.png" class="serviceImg" style="position: relative;
+                        <img src="res/img/serviceProduction.webp" class="serviceImg" style="position: relative;
                             width: 24vw;
                             padding-left: 1vw;
                             padding-right: 1vw;
@@ -317,9 +346,10 @@
             position: relative;
             background-color: var(--bmGreen);
             width: 100%;
-            height: 36vw;">
+            height: 100vh;
+            overflow: hidden;">
             <div style="z-index: 1;
-                position: relative;
+                position: absolute;
                 width: 50%;
                 font-family: 'Antapani', Helvetica, sans-serif;
                 text-align: center;
@@ -342,8 +372,8 @@
                 position: absolute;
                 left: 0;
                 width: 50%;
-                height: 36vw;
-                background-image: url(res/img/publicationBG.jpg);
+                height: 100vh;
+                background-image: url(res/img/publicationBG.webp);
                 background-repeat: no-repeat;
                 background-size: cover;"
                 onclick="(function(){
@@ -355,8 +385,8 @@
                 position: absolute;
                 right: 0;
                 width: 50%;
-                height: 36vw;
-                background-image: url(res/img/socialMediaBG.jpg);
+                height: 100vh;
+                background-image: url(res/img/socialMediaBG.webp);
                 background-repeat: no-repeat;
                 background-size: cover;"
                 onclick="(function(){
@@ -372,13 +402,12 @@
             flex-direction: column;
             align-items: center;
             position: relative;
-            top:0;
             width: 100%;
-            height: 40vw;
+            height: 60vw;
             background-color: var(--bmGold);">
             <div style="display: inline-block;
                 position: relative;
-                left: -17vw;
+                justify-content: center;
                 top: 4vw;
                 font-size: 4vw;
                 font-family: 'Antapani', Helvetica, sans-serif;">
@@ -387,225 +416,241 @@
             <div style="position: relative;
                 background-color:  #fff;
                 top: 7vw;
+                border-radius: 50px;
                 width: 60vw;
-                height: 20vw;
-                box-shadow: 0px 3px 25px 5px #666;">
+                height: 30vw;">
+                <iframe src= "https://forms.office.com/Pages/ResponsePage.aspx?id=3vcbdOXi30aNZ4Jgffneqh_NZvydRClAuZNycZKc_r1UNUFUUTlTNkxPREEzU1Y1OUU5UU1YSlVIMi4u&embed=true" 
+                frameborder= "0" 
+                marginwidth= "0" 
+                marginheight= "0" 
+                style="
+                width: 60vw;
+                height: 30vw;
+                border: none; 
+                border-radius: 50px; 
+                max-width:100%; 
+                max-height:100vh" 
+                allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
             </div>
         </div>
         <div id="scrollTransition3" style="height: 0;"></div>
 
         <!-- Contact Us -->
-        <div id="contact-us" style="position: relative; top: -5.5vw;"></div>
-        <div style="display:flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            top:0;
-            width: 100%;
-            background-color: #fff;">
-            <div style="position: relative;
-                margin-top: 4vw;
-                margin-right: 36vw;
-                width: 24vw;
-                font-size: 4vw;
-                font-family: 'Antapani', Helvetica, sans-serif;
-                padding-bottom: 5vw;">
-                Contact Us</div>
-            <div style="display: grid;
-                columns: 3;
-                gap: 9vw;
-                position:relative;
-                max-width: 70vw;">
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 1;
-                    grid-row: 1;">
-                    <img src="res/img/staffRichard.png" style="max-width: 20vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 2.3vw;">
-                        Richard Dalpe</div>
-                    <div class="fontInfo" style="color: #222;"><em>Director</em></div>
-                    <div class="fontInfo"><em><a href=mailto:bullsmedia-director@usf.edu>bullsmedia-director@usf.edu</a></em></div>
-                </div>
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 2;
-                    grid-row: 1;">
-                    <img src="res/img/staffMiles.png" style="max-width: 20vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 2.2vw;">
-                        Miles Womack</div>
-                    <div class="fontInfo" style="color: #222;"><em>Associate Director</em></div>
-                    <div class="fontInfo" style="font-size: .8vw;"><em><a href=mailto:bullsmedia-associatedirector@usf.edu>bullsmedia-associatedirector@usf.edu</a></em></div>
-                </div>
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 3;
-                    grid-row: 1;">
-                    <img src="res/img/staffDenise.png" style="max-width: 20vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 2.3vw;">
-                        Denise Cury</div>
-                    <div class="fontInfo" style="color: #222;"><em>Assistant Director of Marketing</em></div>
-                    <div class="fontInfo"><em><a href=mailto:denisecury@usf.edu>denisecury@usf.edu</a></em></div>
-                </div>
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 1;
-                    grid-row: 2;">
-                    <img src="res/img/staffPaula.png" style="max-width: 20vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 2.3vw;">
-                        Paula Marcatto</div>
-                    <div class="fontInfo" style="color: #222;"><em>Outreach Coordinator</em></div>
-                    <div class="fontInfo" style="font-size: 1vw;"><em><a href=mailto:BullsMedia-ProgramCoord@usf.edu>BullsMedia-ProgramCoord@usf.edu</a></em></div>
-                </div>
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 2;
-                    grid-row: 2;">
-                    <img src="res/img/staffTalia.png" style="max-width: 20vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 2.3vw;">
-                        Talia Coon</div>
-                    <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
-                    <div class="fontInfo" style="font-size: .8vw;"><em><a href=mailto:bullsmedia-graphicdesigner@usf.edu>bullsmedia-graphicdesigner@usf.edu</a></em></div>
-                </div>
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 3;
-                    grid-row: 2;">
-                    <img src="res/img/staffRamsey.png" style="max-width: 15vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 2.2vw;">
-                        Ramsey Shaban</div>
-                    <div class="fontInfo" style="color: #222;"><em>Technology Coordinator</em></div>
-                    <div class="fontInfo" style="font-size: 1vw;"><em><a href=mailto:BullsMedia-Tech@usf.edu>BullsMedia-Tech@usf.edu</a></em></div>
-                </div>
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 1;
-                    grid-row: 3;">
-                    <img src="res/img/staffJohn.png" style="max-width: 20vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 2.3vw;">
-                        John Kago</div>
-                    <div class="fontInfo" style="color: #222;"><em>Head DJ</em></div>
-                    <div class="fontInfo"><em><a href=mailto:johnkago@usf.edu>johnkago@usf.edu</a></em></div>
-                </div>
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 2;
-                    grid-row: 3;">
-                    <img src="res/img/staffSpencer.png" style="max-width: 20vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 1.8vw;
-                        margin-top: 10px;">
-                        Spencer Gonzales</div>
-                    <div class="fontInfo" style="color: #222;"><em>DJ</em></div>
-                    <div class="fontInfo"><em><a href=mailto:sgonzales@usf.edu>sgonzales@usf.edu</a></em></div>
-                </div>
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 3;
-                    grid-row: 3;">
-                    <img src="res/img/staffMicheal.png" style="max-width: 20vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 1.8vw;
-                        margin-top: 10px;">
-                        Michael Kleman</div>
-                    <div class="fontInfo" style="color: #222;"><em>DJ</em></div>
-                    <div class="fontInfo"><em><a href=mailto:mkleman1@usf.edu>mkleman1@usf.edu</a></em></div>
-                </div>
-            </div>
-            
-            <!-- pretty-format overflow container -->
-            <div style="display:flex;
-                flex-direction: row;
-                justify-items: center;
+        <div style="position: relative;
+            height: 100vh;
+            overflow: auto;
+            scroll-behavior: smooth;">
+            <div id="contact-us" style="position: relative; top: -5.5vw;"></div>
+            <div style="display: flex;
+                flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                margin-top: 9vw;">
+                position: relative;
+                width: 100%;
+                background-color: #fff;">
+                <div style="position: relative;
+                    margin-top: 4vw;
+                    margin-bottom: 3vw;
+                    width: 24vw;
+                    font-size: 4vw;
+                    font-family: 'Antapani', Helvetica, sans-serif;
+                    text-align: center;">
+                    Contact Us</div>
+                <div style="display: grid;
+                    columns: 3;
+                    gap: 9vw;
+                    position: relative;
+                    max-width: 70vw;">
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 1;
+                        grid-row: 1;">
+                        <img src="res/img/staffRichard.webp" style="max-width: 20vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 2.3vw;">
+                            Richard Dalpe</div>
+                        <div class="fontInfo" style="color: #222;"><em>Director</em></div>
+                        <div class="fontInfo"><em><a href=mailto:bullsmedia-director@usf.edu>bullsmedia-director@usf.edu</a></em></div>
+                    </div>
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 2;
+                        grid-row: 1;">
+                        <img src="res/img/staffMiles.webp" style="max-width: 20vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 2.2vw;">
+                            Miles Womack</div>
+                        <div class="fontInfo" style="color: #222;"><em>Associate Director</em></div>
+                        <div class="fontInfo" style="font-size: .8vw;"><em><a href=mailto:bullsmedia-associatedirector@usf.edu>bullsmedia-associatedirector@usf.edu</a></em></div>
+                    </div>
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 3;
+                        grid-row: 1;">
+                        <img src="res/img/staffDenise.webp" style="max-width: 20vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 2.3vw;">
+                            Denise Cury</div>
+                        <div class="fontInfo" style="color: #222;"><em>Assistant Director of Marketing</em></div>
+                        <div class="fontInfo"><em><a href=mailto:denisecury@usf.edu>denisecury@usf.edu</a></em></div>
+                    </div>
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 1;
+                        grid-row: 2;">
+                        <img src="res/img/staffPaula.webp" style="max-width: 20vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 2.3vw;">
+                            Paula Marcatto</div>
+                        <div class="fontInfo" style="color: #222;"><em>Outreach Coordinator</em></div>
+                        <div class="fontInfo" style="font-size: 1vw;"><em><a href=mailto:BullsMedia-ProgramCoord@usf.edu>BullsMedia-ProgramCoord@usf.edu</a></em></div>
+                    </div>
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 2;
+                        grid-row: 2;">
+                        <img src="res/img/staffTalia.webp" style="max-width: 20vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 2.3vw;">
+                            Talia Coon</div>
+                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
+                        <div class="fontInfo" style="font-size: .8vw;"><em><a href=mailto:bullsmedia-graphicdesigner@usf.edu>bullsmedia-graphicdesigner@usf.edu</a></em></div>
+                    </div>
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 3;
+                        grid-row: 2;">
+                        <img src="res/img/staffRamsey.webp" style="max-width: 15vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 2.2vw;">
+                            Ramsey Shaban</div>
+                        <div class="fontInfo" style="color: #222;"><em>Technology Coordinator</em></div>
+                        <div class="fontInfo" style="font-size: 1vw;"><em><a href=mailto:BullsMedia-Tech@usf.edu>BullsMedia-Tech@usf.edu</a></em></div>
+                    </div>
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 1;
+                        grid-row: 3;">
+                        <img src="res/img/staffJohn.webp" style="max-width: 20vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 2.3vw;">
+                            John Kago</div>
+                        <div class="fontInfo" style="color: #222;"><em>Head DJ</em></div>
+                        <div class="fontInfo"><em><a href=mailto:johnkago@usf.edu>johnkago@usf.edu</a></em></div>
+                    </div>
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 2;
+                        grid-row: 3;">
+                        <img src="res/img/staffSpencer.webp" style="max-width: 20vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 1.8vw;
+                            margin-top: 10px;">
+                            Spencer Gonzales</div>
+                        <div class="fontInfo" style="color: #222;"><em>DJ</em></div>
+                        <div class="fontInfo"><em><a href=mailto:sgonzales@usf.edu>sgonzales@usf.edu</a></em></div>
+                    </div>
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 3;
+                        grid-row: 3;">
+                        <img src="res/img/staffMicheal.webp" style="max-width: 20vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 1.8vw;
+                            margin-top: 10px;">
+                            Michael Kleman</div>
+                        <div class="fontInfo" style="color: #222;"><em>DJ</em></div>
+                        <div class="fontInfo"><em><a href=mailto:mkleman1@usf.edu>mkleman1@usf.edu</a></em></div>
+                    </div>
+                </div>
+                <!-- pretty-format overflow container -->
+                <div style="display:flex;
+                    flex-direction: row;
+                    justify-items: center;
+                    align-items: center;
+                    margin-top: 9vw;">
 
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 1;
-                    grid-row: 4;">
-                    <img src="res/img/staffMorgan.png" style="max-width: 20vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 1.8vw;
-                        margin-top: 10px;">
-                        Morgan Pappas</div>
-                    <div class="fontInfo" style="color: #222;"><em>Social Media Coordinator</em></div>
-                    <div class="fontInfo"><em><a href=mailto:morganpappas@usf.edu>morganpappas@usf.edu</a></em></div>
-                </div>
-                <div style="width: 9vw;"></div>
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 3;
-                    grid-row: 3;">
-                    <img src="res/img/staffDevonta.png" style="max-width: 20vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 1.8vw;
-                        margin-top: 10px;">
-                        Devonta Davis</div>
-                    <div class="fontInfo" style="color: #222;"><em>Sports Coordinator</em></div>
-                    <div class="fontInfo"><em><a href=mailto:devonta@usf.edu>devonta@usf.edu</a></em></div>
-                </div>
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 1;
+                        grid-row: 4;">
+                        <img src="res/img/staffMorgan.webp" style="max-width: 20vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 1.8vw;
+                            margin-top: 10px;">
+                            Morgan Pappas</div>
+                        <div class="fontInfo" style="color: #222;"><em>Social Media Coordinator</em></div>
+                        <div class="fontInfo"><em><a href=mailto:morganpappas@usf.edu>morganpappas@usf.edu</a></em></div>
+                    </div>
+                    <div style="width: 9vw;"></div>
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 3;
+                        grid-row: 3;">
+                        <img src="res/img/staffDevonta.webp" style="max-width: 20vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 1.8vw;
+                            margin-top: 10px;">
+                            Devonta Davis</div>
+                        <div class="fontInfo" style="color: #222;"><em>Sports Coordinator</em></div>
+                        <div class="fontInfo"><em><a href=mailto:devonta@usf.edu>devonta@usf.edu</a></em></div>
+                    </div>
 
-                <!-- template staff thing
-                <div style="display: flex;
-                    flex-direction: column;
-                    justify-items: center;
-                    align-items: center;
-                    grid-column: 3;
-                    grid-row: 3;">
-                    <img src="res/img/" style="max-width: 20vw;">
-                    <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 10px 10px #EDEBD1;
-                        font-size: 1.8vw;
-                        margin-top: 10px;">
-                        Name</div>
-                    <div class="fontInfo" style="color: #222;"><em>Position</em></div>
-                    <div class="fontInfo"><em><a href=mailto:>email</a></em></div>
+                    <!-- template staff thing
+                    <div style="display: flex;
+                        flex-direction: column;
+                        justify-items: center;
+                        align-items: center;
+                        grid-column: 3;
+                        grid-row: 3;">
+                        <img src="res/img/" style="max-width: 20vw;">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                            text-shadow: 10px 10px #EDEBD1;
+                            font-size: 1.8vw;
+                            margin-top: 10px;">
+                            Name</div>
+                        <div class="fontInfo" style="color: #222;"><em>Position</em></div>
+                        <div class="fontInfo"><em><a href=mailto:>email</a></em></div>
+                    </div>
+                    <div style="width: 10vw;"></div>
+                    -->
                 </div>
-                <div style="width: 10vw;"></div>
-                -->
-            </div>  <!-- end pretty-format overflow container -->
-            <div style="height: 10vw;"></div>
+                <!-- end pretty-format overflow container -->
+                <div style="height: 10vw;"></div>
+            </div>
         </div>
         <script src="index.js"></script> <!-- References dom objects created above; don't move this -->
     </body>
