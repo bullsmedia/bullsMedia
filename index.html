@@ -17,95 +17,91 @@
 
 
         <!-- Sticky header -->
-        <div style="position: relative; top: 0; height: 5.5vw;"></div>
+        <div style="position: relative; top: 0; height: 5.5vmax;"></div>
         <div style=" display: flex;
-            flex-direction: row;
-            align-items: center;
-            height: 5.5vw;
-            width: 100%;
-            position: fixed;
-            z-index: 10;
-            top: 0%;
-            left: 0%;
-            background-color: var(--bmGreen);
-            ">
+        flex-direction: row;
+        align-items: center;
+        height: 5.5vmax;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+        top: 0%;
+        left: 0%;
+        background-color: var(--bmGreen);">
             <a href="index.html#top" style="position: relative; left: 0; top: .2vw;">
                 <img src="res/img/bmLogo.webp" alt="The Bulls Media Logo" style="max-width: 6vw;">
             </a>
             <div style="position: relative;
-                top: -.25vw;
-                left: 0vw;
-                color: #fff;
-                font-weight: 40;
-                font-family: Calibri, sans-serif;
-                font-size: 4vw;">|</div>
+            top: -.25vw;
+            left: 0vw;
+            color: #fff;
+            font-weight: 40;
+            font-family: Calibri, sans-serif;
+            font-size: 4vw;">
+                |
+            </div>
             <a href="#what-we-do" style="position: relative;
-                left: 2vw;
-                color: #fff;
-                font-family: 'Antapani', Helvetica, sans-serif;
-                font-size: 1.8vw;
-                text-decoration: none;">
+            left: 2vw;
+            color: #fff;
+            font-family: 'Antapani', Helvetica, sans-serif;
+            font-size: 1.8vw;
+            text-decoration: none;">
                 What We Do</a>
             <a href="#services" style="position: relative;
-                left: 5vw;
-                color: #fff;
-                font-family: 'Antapani', Helvetica, sans-serif;
-                font-size: 1.8vw;
-                text-decoration: none;">
+            left: 5vw;
+            color: #fff;
+            font-family: 'Antapani', Helvetica, sans-serif;
+            font-size: 1.8vw;
+            text-decoration: none;">
                 Services</a>
             <a href="#content" style="position: relative;
-                left: 8vw;
-                color: #fff;
-                font-family: 'Antapani', Helvetica, sans-serif;
-                font-size: 1.8vw;
-                text-decoration: none;">
+            left: 8vw;
+            color: #fff;
+            font-family: 'Antapani', Helvetica, sans-serif;
+            font-size: 1.8vw;
+            text-decoration: none;">
                 Content</a>
             <a href="#get-involved" style="position: relative;
-                left: 11vw;
-                color: #fff;
-                font-family: 'Antapani', Helvetica, sans-serif;
-                font-size: 1.8vw;
-                text-decoration: none;">
+            left: 11vw;
+            color: #fff;
+            font-family: 'Antapani', Helvetica, sans-serif;
+            font-size: 1.8vw;
+            text-decoration: none;">
                 Get Involved</a>
             <a href="#contact-us" style="position: relative;
-                left: 14vw;
-                color: #fff;
-                font-family: 'Antapani', Helvetica, sans-serif;
-                font-size: 1.8vw;
-                text-decoration: none;">
+            left: 14vw;
+            color: #fff;
+            font-family: 'Antapani', Helvetica, sans-serif;
+            font-size: 1.8vw;
+            text-decoration: none;">
                 Contact Us</a>
-            <div style="display: flex; flex-direction: row; align-items: center; position: absolute; right: 0; height: 5.5vw; width: 17vw;">
-                <!-- <a href="">
-                    <img src="res/img/facebook.webp" alt="Facebook Logo" style="
-                    position: absolute;
-                    left: 80vw;
-                    top: 1vw;
-                    max-width: 3.4vw;
-                    ">
-                </a> -->
-                <a href="https://www.instagram.com/usf_bullsmedia/">
-                    <img src="res/img/instagram.webp" target="_blank" alt="LinkedIn Logo" style="
-                    position: relative;
-                    margin-left: 3vw;
-                    max-width: 2vw;
-                    ">
-                </a>
-                <a href="https://twitter.com/usf_bullsmedia"> <!-- Funky image name to bypass uBlock list 8) -->
-                    <img src="res/img/twitterZ.webp" target="_blank" alt="Twitter Logo" style="
-                    position: relative;
-                    margin-left: 3vw;
-                    max-width: 2vw;
-                    ">
-                </a>
-                <a href="https://www.linkedin.com/company/bulls-media">
-                    <img src="res/img/linkedin.webp" target="_blank" alt="LinkedIn Logo" style="
-                    position: relative;
-                    margin-left: 3vw;
-                    max-width: 2vw;
-                    ">
-                </a>
+
+            <!-- Social Media Links -->
+            <div style="display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            height: 5.5vmax;
+            width: 17vw;">
+                <img src="res/img/twitter.webp" target="_blank" alt="Twitter Logo" style="
+                position: relative;
+                margin-right: 3vw;
+                max-width: 2vw;"
+                onclick='window.location = "https://twitter.com/usf_bullsmedia"'>
+                <img src="res/img/linkedin.webp" target="_blank" alt="LinkedIn Logo" style="
+                position: relative;
+                margin-right: 3vw;
+                max-width: 2vw;"
+                onclick='window.location = "https://www.linkedin.com/company/bulls-media"'>
+                <img src="res/img/instagram.webp" target="_blank" alt="LinkedIn Logo" style="
+                position: relative;
+                margin-right: 3vw;
+                max-width: 2vw;"
+                onclick='window.location = "https://www.instagram.com/usf_bullsmedia/"'>
             </div>
         </div>
+
 
         <!-- Top image + What We Do -->
         <div id="topBox" style="position: relative; top: -5.5vw; overflow: auto; scroll-behavior: smooth;">
