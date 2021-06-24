@@ -14,6 +14,7 @@
         <link rel="stylesheet" type="text/css" href="global.css"/>
         <link rel="stylesheet" type="text/css" href="index.css"/>
         <link rel="stylesheet" type="text/css" href="https://use.typekit.net/tln6exz.css"/>
+        <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
 
 
         <!-- Sticky header -->
@@ -54,13 +55,13 @@
             font-size: 1.8vw;
             text-decoration: none;">
                 Services</a>
-            <a href="#content" style="position: relative;
+            <a href="#calendar" style="position: relative;
             left: 8vw;
             color: #fff;
             font-family: 'Antapani', Helvetica, sans-serif;
             font-size: 1.8vw;
             text-decoration: none;">
-                Content</a>
+                Calendar</a>
             <a href="#get-involved" style="position: relative;
             left: 11vw;
             color: #fff;
@@ -252,7 +253,7 @@
                         background-color: #22adaf;
                         transition: inherit;"
                         onclick="(function(){
-                        window.location = 'https://usf.campuslabs.com/engage/submitter/form/start/304939';
+                        window.location = 'https://cglink.me/2k5/s50030';
                         })();">
                         <div class="serviceText" style="position: absolute;
                             font-family: 'museo-sans', Arial, sans-serif;
@@ -339,61 +340,32 @@
             </div>
         </div>
 
-        <!-- Content -->
-        <div id="content" style="position: relative; top: -5.5vw;"></div>
-        <div style="
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        <!-- Calendar -->
+        <div id="calendar" style="position: relative; top: -5.5vw;"></div>
+        <div style="display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 94.5vh;
+        position: relative;
+        overflow: hidden;
+        background-color: var(--bmGreen);">
+            <div style="display: inline-block;
             position: relative;
-            background-color: var(--bmGreen);
-            width: 100%;
-            height: 100vh;
+            justify-content: center;
+            top: -2vw;
+            font-size: 4vw;
+            font-family: 'Antapani', Helvetica, sans-serif;
+            color: #fff">
+            Event Calendar
+            </div>
+            <div style="background-color: #fff;
+            width: 60vw;
+            padding: 10px;
+            border-radius: 50px;
+            max-height: 90vh;
             overflow: hidden;">
-            <div style="z-index: 1;
-                position: absolute;
-                width: 50%;
-                font-family: 'Antapani', Helvetica, sans-serif;
-                text-align: center;
-                font-size: 4vw;
-                color: var(--bmGold)">
-                Read Our Digital Publication <br/> (Under Construction)
-            </div>
-            <div style="z-index: 1;
-                position: absolute;
-                right: 5vw;
-                width: 40vw;
-                font-family: 'Antapani', Helvetica, sans-serif;
-                text-align: center;
-                font-size: 4vw;
-                color: var(--bmGold)">
-                View our Event Calendar <br/> (Under Construction)
-            </div>
-            <div class="hoverFade" style="display: inline-block;
-                z-index: 3;
-                position: absolute;
-                left: 0;
-                width: 50%;
-                height: 100vh;
-                background-image: url(res/img/publicationBG.webp);
-                background-repeat: no-repeat;
-                background-size: cover;"
-                ><!--onclick="(function(){
-                    window.location='publication.html';
-                })();"-->
-            </div>
-            <div class="hoverFade" style="display: inline-block;
-                z-index: 3;
-                position: absolute;
-                right: 0;
-                width: 50%;
-                height: 100vh;
-                background-image: url(res/img/socialMediaBG.webp);
-                background-repeat: no-repeat;
-                background-size: cover;"
-                ><!--onclick="(function(){
-                    window.location='calendar.html';
-                })();"-->
+                <div data-tockify-component="calendar" data-tockify-height="60vh" data-tockify-calendar="jack.harlow"></div>
             </div>
         </div>
 
