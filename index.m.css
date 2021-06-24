@@ -1,0 +1,66 @@
+@charset "utf-8";
+body{
+    color: #282828;
+}
+.descText{
+    font-family: "museo-sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 3.8vmin;
+}
+.boldText{
+    font-family: "museo-sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.hoverFade{
+    cursor: pointer;
+    transition: all .382s ease-in-out;
+}
+.hoverFade:hover{
+    opacity: 0;
+}
+.hoverGold{
+    cursor: pointer;
+    transition: all .382s ease-in-out;
+    background-color: var(--bmGreen);
+}
+.hoverGold:hover{
+    background-color: var(--bmGold);
+}
+div div div .serviceImg{
+    transition: all .382s ease-in-out;
+}
+.serviceText{
+    font-size: 4vmin;
+}
+.navText{
+    font-family: 'Antapani', Helvetica, sans-serif;
+    font-size: 2.2vmax;
+    max-height: 2.2vmax;
+    text-decoration: none;
+    text-overflow: clip;
+    overflow: hidden;
+}
+.serviceChild{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vmin;
+    border-radius: 5vmin;
+    width: 60vw;
+    min-height: 30vmin;
+    transition: inherit;
+}
+.contactChild{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 15vmin;
+}
+.staffImg{
+    width: 40vw;
+}
+/* ramsey shaban 2020-2021 */
