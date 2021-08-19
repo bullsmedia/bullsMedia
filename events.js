@@ -3,7 +3,7 @@ var eventsList = (function(){
         /* Fetch event data from the table and display it on the DOM */
         getEvents: function(){
             requestEvents = new XMLHttpRequest();
-            requestEvents.open("GET", "index.php", true);
+            requestEvents.open("GET", "events.php", true);
             requestEvents.send();
             requestEvents.onreadystatechange = function(){
                 if (this.readyState == 4 && this.status == 200) {
