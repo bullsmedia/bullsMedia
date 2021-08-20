@@ -12,14 +12,14 @@ var eventsList = (function(){
                 }
             };
         },
-        populateEvents: function(eventsList){
+        populateEvents: function(eventArray){
             // Remove everything inside eventParent div
             while (document.querySelector("#eventParent").firstChild) {
-                document.querySelector("#pubList").removeChild(
-                    document.querySelector("#pubList").lastChild);
+                document.querySelector("#eventParent").removeChild(
+                    document.querySelector("#eventParent").lastChild);
             } // removing last child is faster than removing first
 
-            eventsList.forEach(array => {
+            eventArray.forEach(array => {
                 var name = array[0];
                 var location = array[1];
                 var description = array[2];
