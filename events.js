@@ -43,41 +43,50 @@ var eventsList = (function(){
 
                 /* Child Divs */{
                 var childName = document.createElement("div");
-                childName.classList.add("fontHeader");
+                childName.classList.add("fontEvent");
                 childName.classList.add("noselect");
                 childName.classList.add("pt-3");
-                // childName.style.lineHeight = "1.14em"; /* a */
-                // childName.style.maxHeight = "1.5em"; /* a * number of lines to show */
                 childName.style.color = "#fff";
-                childName.style.fontSize = "clamp(18px, 2.5vw, 69px)";
+                childName.style.fontSize = "clamp(18px, 2.7vw, 69px)";
+                childName.style.fontWeight = "900";
                 childName.innerHTML = name;
 
                 var childDescription = document.createElement("div");
-                childDescription.classList.add("fontSubHeader");
+                childDescription.classList.add("fontEvent");
                 childDescription.classList.add("noselect");
-                childDescription.classList.add("mb-3");
+                childDescription.classList.add("my-3");
                 childDescription.classList.add("d-none");
                 childDescription.classList.add("d-lg-block");
+                childDescription.style.overflow = "hidden";
                 childDescription.style.color = "#fff";
+                childDescription.style.position = "relative";
+                childDescription.style.left = "2vw";
+                childDescription.style.fontSize = "clamp(14px, 1.2vw, 42px)";
+                childDescription.style.fontWeight = "300";
                 childDescription.innerHTML = description;
 
                 var childLocation = document.createElement("em");
-                childLocation.classList.add("fontSubHeader");
+                childLocation.classList.add("fontEvent");
                 childLocation.classList.add("noselect");
+                childLocation.classList.add("my-5");
                 childLocation.style.maxHeight = "11vh";
                 childLocation.style.maxWidth = "50vw";
                 childLocation.style.overflow = "hidden";
                 childLocation.style.color = "#fff";
                 childLocation.style.fontSize = "clamp(14px, 1.8vw, 42px)";
+                childLocation.style.fontWeight = "700";
                 childLocation.innerHTML = location;
 
                 var childStart = document.createElement("b");
                 childStart.classList.add("noselect");
+                childStart.classList.add("fontEvent");
                 childStart.classList.add("col-lg-2");
                 childStart.classList.add("col-10");
+                childStart.classList.add("noselect");
                 childStart.classList.add("align-self-center");
                 childStart.style.color = "#fff";
                 childStart.style.textAlign = "center";
+                childStart.style.fontWeight = "300";
                 childStart.style.fontSize = "clamp(12px, 1.5vw, 36px)";
                 var dateTimeFormat = new Intl.DateTimeFormat('en-US', {
                     month: 'short', day: 'numeric',
@@ -107,7 +116,7 @@ var eventsList = (function(){
                 childImg.classList.add("d-none");
                 childImg.classList.add("d-lg-block");
                 childImg.style.position = "relative";
-                childImg.style.top = "3vh";
+                childImg.style.top = "50px";
                 /* offset-x | offset-y | blur-radius | spread-radius | color */
                 childImg.src = img === null ? "res/img/bmLogo.webp" : img;
                 childImg.style.borderRadius = "50px";

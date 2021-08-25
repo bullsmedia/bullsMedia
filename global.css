@@ -42,6 +42,10 @@ a:visited{
     font-weight: lighter;
     font-size: 1.5vw;
 }
+.fontEvent{
+    color: var(--document-text-color);
+    font-family: 'museo-sans', sans-serif;
+}
 .fontInfo{
     font-family: 'Antapani', Helvetica, sans-serif;
     font-size: 1.15vw;

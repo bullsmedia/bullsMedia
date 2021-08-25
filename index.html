@@ -209,126 +209,116 @@
             </div>
         </div>
 
-        <!-- Services grid -->
+        <!-- Services -->
         <div style="display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
-        margin-top: 2vw;">
+        height: 94.5vh;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        position: relative;">
             <div id="services" style="position: relative; top: -5.5vw;"></div>
-            <div style="position: relative;
-                display: flex;
+            <div class="my-3"
+            style= "font-size: 4vw;
+            font-family: 'Antapani', Arial, sans-serif;">
+                Services</div>
+            <div id="serviceParent"
+            class="container-fluid row"
+            style="display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .382s ease-in-out;
+            margin-bottom: 15vh;">
+                <div id="serviceDJ"
+                class="col-10 m-3"
+                style="display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin-top: 1vw;
-                height: 8vw;
-                font-size: 4vw;
-                font-family: 'Antapani', Arial, sans-serif;">
-                Services</div>
-            <div id="serviceParent" style="display: grid;
-                columns: 2;
-                row-gap: 2vw;
-                column-gap: 2vw;
-                max-width: 70vw;
-                position: relative;
-                transition: all .382s ease-in-out;
-                margin-bottom: 15vw;">
-                    <div id="serviceDJ" style="position: relative;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        grid-column: 1;
-                        grid-row: 1;
-                        width: 27vw;
-                        height: 15vw;
-                        border-radius: 50px;
-                        background-color: #22adaf;
-                        transition: inherit;"
-                        onclick="(function(){
-                        window.location = 'https://cglink.me/2k5/s50030';
-                        })();">
-                        <div class="serviceText" style="position: absolute;
-                            font-family: 'museo-sans', Arial, sans-serif;
-                            transition: inherit;">
-                            Hire our DJs</div>
-                        <img src="res/img/serviceDJ.webp" class="serviceImg" style="position: absolute;
-                            width: 22vw;
-                            background-color: #22adaf;
-                            transition: inherit;">
+                min-height: 20vh;
+                border-radius: 50px;
+                background-color: #22adaf;
+                transition: inherit;
+                overflow: hidden;"
+                onclick="(function(){
+                window.location = 'https://cglink.me/2k5/s50030';
+                })();">
+                    <div class="serviceText"
+                    style="position: absolute;
+                    font-family: 'museo-sans', sans-serif;
+                    transition: inherit;">
+                        Hire our DJs
                     </div>
-                    <div id="serviceRecording" style="position: relative;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        grid-column: 2;
-                        grid-row: 1;
-                        width: 27vw;
-                        height: 15vw;
-                        border-radius: 50px;
-                        background-color: #f9c13a;
-                        transition: inherit;"
-                        onclick='(function(){window.location = "https://cglink.me/2k5/s50112";})();'>
-                        <div class="serviceText" style="position: absolute;
-                            text-align: center;
-                            font-family: 'museo-sans', Arial, Helvetica, sans-serif;
-                            transition: inherit;">
-                            HYPE Services</div>
-                        <img src="res/img/serviceRecording.webp" class="serviceImg" style="position: absolute;
-                            width: 27vw; 
-                            background-color: #f9c13a;
-                            transition: inherit;">
+                    <img src="res/img/serviceDJ.webp"
+                    class="serviceImg my-5"
+                    style="background-color: #22adaf;
+                    max-width: 40vw;">
+                    <div class="d-block d-lg-none m-3"
+                    style="font-size: clamp(30px, 3vw, 50px);
+                    font-family: 'museo-sans', sans-serif;">
+                        Hire our DJs
                     </div>
-                    <div id="servicePodcast" style="position: relative;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        grid-column: 1;
-                        grid-row: 2;
-                        width: 27vw;
-                        height: 15vw;
-                        border-radius: 50px;
-                        background-color: #8db141;
-                        transition: inherit;">
-                        <div class="serviceText" style="position: absolute;
-                            text-align: center;
-                            font-family: 'museo-sans', Arial, Helvetica, sans-serif;
-                            transition: inherit;
-                            font-size: 2.5vw;">
-                            Book our Podcast Room<br/>
-                            (Under Construction)</div>
-                        <img src="res/img/servicePodcast.webp" class="serviceImg" style="position: relative;
-                            width: 21vw;
-                            padding-left: 2vw;
-                            padding-right: 2vw;
-                            background-color: #8db141;
-                            transition: inherit;">
+                </div>
+                <div id="serviceHype"
+                class="col-10 col-lg-5 m-3"
+                style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                background-color: #f9c13a;
+                transition: inherit;
+                overflow: hidden;"
+                onclick='(function(){window.location = "https://cglink.me/2k5/s50112";})();'>
+                    <div class="serviceText"
+                    style="position: absolute;
+                    font-family: 'museo-sans', sans-serif;
+                    transition: inherit;">
+                        HYPE Services
                     </div>
-                    <div id="serviceProduction" style="position: relative;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        grid-column: 2;
-                        grid-row: 2;
-                        border-radius: 50px;
-                        width: 27vw;
-                        height: 15vw;
-                        background-color: #e95536;
-                        transition: inherit;"><!-- recording/whatever booking -->
-                        <div class="serviceText" style="position: absolute;
-                            text-align: center;
-                            font-family: 'museo-sans', Arial, Helvetica, sans-serif;
-                            transition: inherit;">
-                            Book our Recording Room<br/>
-                            (Under Construction)
-                        </div>
-                        <img src="res/img/serviceProduction.webp" class="serviceImg" style="position: relative;
-                            width: 24vw;
-                            padding-left: 1vw;
-                            padding-right: 1vw;
-                            background-color: #e95536;
-                            transition: inherit;">
+                    <img src="res/img/serviceHype.webp"
+                    class="serviceImg my-5"
+                    style="max-width: 30vw;
+                    max-height: 40vh;
+                    background-color: #f9c13a;">
+                    <div class="d-block d-lg-none m-3"
+                    style="font-size: clamp(30px, 3vw, 50px);
+                    font-family: 'museo-sans', sans-serif;">
+                        HYPE Services
                     </div>
-
+                </div>
+                <div id="serviceProduction"
+                class="col-10 col-lg-5 m-3"
+                style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                background-color: #e95536;
+                transition: inherit;
+                overflow: hidden;"
+                onclick='(function(){window.location = "https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/";})();'>
+                    <div class="serviceText"
+                    style="position: absolute;
+                    text-align: center;
+                    font-family: 'museo-sans', sans-serif;
+                    transition: inherit;">
+                        Book our Studios<br/>
+                        (Under Construction)
+                    </div>
+                    <img src="res/img/serviceProduction.webp"
+                    class="serviceImg my-5"
+                    style="max-width: 37vw;
+                    max-height: 40vh;
+                    background-color: #e95536;">
+                    <div class="d-block d-lg-none p-3"
+                    style="text-align: center;
+                    font-size: clamp(30px, 3vw, 50px);
+                    font-family: 'museo-sans', sans-serif;">
+                        Book our Studios<br/>
+                        (Under Construction)
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -342,15 +332,19 @@
         scroll-behavior: smooth;
         background-color: #fff;">
             <div id="calendar" style="position: relative; top: -5.5vw;"></div>
-            <div class="mt-5" style="display: block;
+            <div class="mt-5"
+            style="display: block;
             position: relative;
             font-size: 4vw;
             font-family: 'Antapani', Helvetica, sans-serif;">
                 Upcoming Events
             </div>
             <script src="events.js"></script>
-            <div id="eventParent" class="container-fluid row">
-                <div class="mt-5" style="display: block;
+            <div id="eventParent"
+            style="margin-bottom: 10vh;"
+            class="container-fluid row">
+                <div class="py-5"
+                style="display: block;
                 text-align: center;
                 position: relative;
                 font-size: 2vw;

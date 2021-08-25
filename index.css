@@ -37,11 +37,15 @@ body{
     background-color: var(--bmGold);
 }
 div div div .serviceImg{
-    transition: all .382s ease-in-out;
+    transition: opacity .382s ease-in-out;
 }
 div div div:hover .serviceImg{
     opacity:0;
 }
+div div div:hover .serviceText{
+    opacity: 1;
+}
 .serviceText{
+    opacity: 0;
     font-size: 2.5vw;
 }

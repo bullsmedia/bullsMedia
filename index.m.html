@@ -233,95 +233,111 @@
         <div style="display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
-        position: relative;
-        overflow:scroll;
-        scroll-behavior: smooth;">
-            <div id="services" style="position: relative; top: -5.5vmax;"></div>
-            <div style="position: relative;
-            margin-top: 10vmin;
-            margin-bottom: 5vmin;
-            height: 8vmin;
-            font-size: 8vmin;
+        height: 94.5vh;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        position: relative;">
+            <div id="services" style="position: relative; top: -5.5vw;"></div>
+            <div class="my-3"
+            style= "font-size: 4vw;
             font-family: 'Antapani', Arial, sans-serif;">
                 Services</div>
-            <div id="serviceParent" style="
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            flex-shrink: 0;
+            <div id="serviceParent"
+            class="container-fluid row"
+            style="display: flex;
+            justify-content: center;
             align-items: center;
-            max-width: 70vw;
-            height: 200vmin;
-            margin-bottom: 100vw;
             transition: all .382s ease-in-out;
-            ">
-                <div id="serviceDJ" class="serviceChild"
-                style="background-color: #22adaf;"
-                onclick='(function(){window.location = "https://cglink.me/2k5/s50030";})();'>
-                <div class="serviceText" style="position: absolute;
-                font-family: 'museo-sans', Arial, sans-serif;
-                transition: inherit;">
-                    Hire our DJs</div>
-                    <img id="serviceDJ_img" src="res/img/serviceDJ.webp" class="serviceImg" style="position: absolute;
-                    width: 35vw;
-                    background-color: #22adaf;
-                    opacity: 100;"
-                    onclick='event.stopPropagation();
-                    disappear("#serviceDJ_img")'>
+            margin-bottom: 15vh;">
+                <div id="serviceDJ"
+                class="col-10 m-3"
+                style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 20vh;
+                border-radius: 50px;
+                background-color: #22adaf;
+                transition: inherit;
+                overflow: hidden;"
+                onclick="(function(){
+                window.location = 'https://cglink.me/2k5/s50030';
+                })();">
+                    <div class="serviceText"
+                    style="position: absolute;
+                    font-family: 'museo-sans', sans-serif;
+                    transition: inherit;">
+                        Hire our DJs
+                    </div>
+                    <img src="res/img/serviceDJ.webp"
+                    class="serviceImg my-5"
+                    style="background-color: #22adaf;
+                    max-width: 40vw;">
+                    <div class="d-block d-lg-none m-3"
+                    style="font-size: clamp(30px, 3vw, 50px);
+                    font-family: 'museo-sans', sans-serif;">
+                        Hire our DJs
+                    </div>
                 </div>
-                <div id="serviceRecording" class="serviceChild"
-                style="background-color: #f9c13a;"
+                <div id="serviceHype"
+                class="col-10 col-lg-5 m-3"
+                style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                background-color: #f9c13a;
+                transition: inherit;
+                overflow: hidden;"
                 onclick='(function(){window.location = "https://cglink.me/2k5/s50112";})();'>
-                    <div class="serviceText" style="position: absolute;
-                    text-align: center;
-                    font-family: 'museo-sans', Arial, Helvetica, sans-serif;
+                    <div class="serviceText"
+                    style="position: absolute;
+                    font-family: 'museo-sans', sans-serif;
                     transition: inherit;">
-                        HYPE Services</div>
-                    <img id="serviceRecording_img" src="res/img/serviceRecording.webp" class="serviceImg" style="position: absolute;
-                    width: 40vw; 
-                    background-color: #f9c13a;
-                    opacity: 100;"
-                    onclick='event.stopPropagation();
-                    disappear("#serviceRecording_img")'>
+                        HYPE Services
+                    </div>
+                    <img src="res/img/serviceHype.webp"
+                    class="serviceImg my-5"
+                    style="max-width: 30vw;
+                    max-height: 40vh;
+                    background-color: #f9c13a;">
+                    <div class="d-block d-lg-none m-3"
+                    style="font-size: clamp(30px, 3vw, 50px);
+                    font-family: 'museo-sans', sans-serif;">
+                        HYPE Services
+                    </div>
                 </div>
-                <div id="servicePodcast" class="serviceChild"
-                style="background-color: #8db141;">
-                    <div class="serviceText" style="position: absolute;
+                <div id="serviceProduction"
+                class="col-10 col-lg-5 m-3"
+                style="display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+                background-color: #e95536;
+                transition: inherit;
+                overflow: hidden;"
+                onclick='(function(){window.location = "https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/";})();'>
+                    <div class="serviceText"
+                    style="position: absolute;
                     text-align: center;
-                    font-family: 'museo-sans', Arial, Helvetica, sans-serif;
-                    transition: inherit;
-                    font-size: 3vmin;">
-                        Book our<br/>
-                        Podcast Room<br/>
-                        (Under Construction)</div>
-                    <img id="servicePodcast_img" src="res/img/servicePodcast.webp" class="serviceImg" style="position: relative;
-                    width: 30vw;
-                    padding-left: 2vw;
-                    padding-right: 2vw;
-                    background-color: #8db141;
-                    opacity: 100;"
-                    onclick = 'event.stopPropagation();
-                    disappear("#servicePodcast_img")'>
-                </div>
-                <div id="serviceProduction" class="serviceChild"
-                style="background-color: #e95536;"><!-- recording? booking -->
-                    <div class="serviceText" style="position: absolute;
-                    text-align: center;
-                    font-family: 'museo-sans', Arial, Helvetica, sans-serif;
+                    font-family: 'museo-sans', sans-serif;
                     transition: inherit;">
-                        Book our<br/>
-                        Recording Room<br/>
+                        Book our Studios<br/>
                         (Under Construction)
                     </div>
-                    <img id="serviceProduction_img" src="res/img/serviceProduction.webp" class="serviceImg" style="position: relative;
-                    width: 37vw;
-                    padding-left: 1vw;
-                    padding-right: 1vw;
-                    background-color: #e95536;
-                    opacity: 100;"
-                    onclick = 'event.stopPropagation();
-                    disappear("#serviceProduction_img")'>
+                    <img src="res/img/serviceProduction.webp"
+                    class="serviceImg my-5"
+                    style="max-width: 37vw;
+                    max-height: 40vh;
+                    background-color: #e95536;">
+                    <div class="d-block d-lg-none p-3"
+                    style="text-align: center;
+                    font-size: clamp(30px, 3vw, 50px);
+                    font-family: 'museo-sans', sans-serif;">
+                        Book our Studios<br/>
+                        (Under Construction)
+                    </div>
                 </div>
             </div>
         </div>
