@@ -129,6 +129,7 @@ var eventsList = (function(){
                 childLeft.classList.add("col-5");
                 childLeft.classList.add("row");
                 childLeft.appendChild(childStart);
+                childLeft.appendChild(childImg);
 
                 var childRight = document.createElement("div");
                 childRight.classList.add("col-7");
