@@ -49,3 +49,13 @@ div div div:hover .serviceText{
     opacity: 0;
     font-size: 2.5vw;
 }
+.contactChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vmin;
+}
+.contactChild img{
+    max-width: 30vw;
+}

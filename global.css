@@ -48,6 +48,6 @@ a:visited{
 }
 .fontInfo{
     font-family: 'Antapani', Helvetica, sans-serif;
-    font-size: 1.15vw;
+    font-size: clamp(15px, 1.15vmax, 40px);
     color: #9F9F9F
 }

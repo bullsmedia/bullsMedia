@@ -129,12 +129,6 @@ var eventsList = (function(){
                 childLeft.classList.add("col-5");
                 childLeft.classList.add("row");
                 childLeft.appendChild(childStart);
-                // Is img still displayed once window size is solved? 
-                // If not, don't append img
-                let isImgDisp = window.getComputedStyle(childImg).getPropertyValue("display");
-                if (isImgDisp != "none"){
-                    childLeft.appendChild(childImg); 
-                }
 
                 var childRight = document.createElement("div");
                 childRight.classList.add("col-7");
