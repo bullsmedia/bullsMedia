@@ -2,7 +2,7 @@
 body{
     color: #282828;
 }
-.noselect { /* Clicking rapidly on the div will highlight random text. This stops that. */
+.noselect { /* Clicking rapidly on stuff will highlight text. This stops that. */
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */
@@ -10,6 +10,29 @@ body{
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently
                        supported by Chrome, Edge, Opera and Firefox */
+}
+.nav-item a{
+    color: #fff;;
+    font-family: 'Antapani', Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2vmax;
+    margin: .7vmin;
+}
+.nav-item a:hover{
+    color: var(--bmGold);
+}
+.nav-item a i{
+    transition: all .15s ease-in-out;
+    color: #fff;
+    width: 3vmax;
+    margin: .5vmin;
+}
+.nav-item a i:hover{
+    color: var(--bmGold);
+}
+.navbar-toggler i{
+    color: #fff;
+    font-size: 4vmax;
 }
 .descText{
     font-family: "museo-sans", sans-serif;
@@ -55,7 +78,8 @@ div div div:hover .serviceText{
     justify-content: center;
     align-items: center;
     margin-bottom: 5vmin;
+    text-align: center;
 }
 .contactChild img{
-    max-width: 30vw;
+    width: clamp(50px, 18vw, 300px);
 }

@@ -12,197 +12,154 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
     <body style="margin: 0; overflow: hidden;">
-
+        
         <!-- Sticky header -->
-        <div style="position: relative; top: 0; height: 5.5vmax;"></div>
-        <div style=" display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 5.5vmax;
-        width: 100%;
-        position: fixed;
-        z-index: 10;
-        top: 0%;
-        left: 0%;
+        <nav class="navbar fixed-top navbar-expand-lg"
+        style="z-index: 5;
         background-color: var(--bmGreen);">
-            <a href="index.html#top" style="position: relative; left: 0; top: .2vw;">
-                <img src="res/img/bmLogo.webp" alt="The Bulls Media Logo" style="max-width: 6vw;">
-            </a>
-            <div style="position: relative;
-            top: -.25vw;
-            left: 0vw;
-            color: #fff;
-            font-weight: 40;
-            font-family: Calibri, sans-serif;
-            font-size: 4vw;">
-                |
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#top">
+                    <img src="res/img/bmLogo.webp" alt="The Bulls Media Logo" style="height: 5.5vmax;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#what-we-do">What We Do</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#get-involved">Get Involved</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://twitter.com/usf_bullsmedia"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/company/bulls-media"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/usf_bullsmedia/"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.twitch.tv/bullsmedia"><i class="bi bi-twitch"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <a href="#what-we-do" style="position: relative;
-            left: 2vw;
-            color: #fff;
-            font-family: 'Antapani', Helvetica, sans-serif;
-            font-size: 1.8vw;
-            text-decoration: none;">
-                What We Do</a>
-            <a href="#services" style="position: relative;
-            left: 5vw;
-            color: #fff;
-            font-family: 'Antapani', Helvetica, sans-serif;
-            font-size: 1.8vw;
-            text-decoration: none;">
-                Services</a>
-            <a href="#calendar" style="position: relative;
-            left: 8vw;
-            color: #fff;
-            font-family: 'Antapani', Helvetica, sans-serif;
-            font-size: 1.8vw;
-            text-decoration: none;">
-                Calendar</a>
-            <a href="#get-involved" style="position: relative;
-            left: 11vw;
-            color: #fff;
-            font-family: 'Antapani', Helvetica, sans-serif;
-            font-size: 1.8vw;
-            text-decoration: none;">
-                Get Involved</a>
-            <a href="#contact-us" style="position: relative;
-            left: 14vw;
-            color: #fff;
-            font-family: 'Antapani', Helvetica, sans-serif;
-            font-size: 1.8vw;
-            text-decoration: none;">
-                Contact Us</a>
+        </nav>
 
-            <!-- Social Media Links -->
-            <div style="display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            position: absolute;
-            right: 0;
-            height: 5.5vmax;
-            width: 17vw;">
-                <img src="res/img/twitter.webp" target="_blank" alt="Twitter Logo" style="
-                position: relative;
-                margin-right: 3vw;
-                max-width: 2vw;"
-                onclick='window.location = "https://twitter.com/usf_bullsmedia"'>
-                <img src="res/img/linkedin.webp" target="_blank" alt="LinkedIn Logo" style="
-                position: relative;
-                margin-right: 3vw;
-                max-width: 2vw;"
-                onclick='window.location = "https://www.linkedin.com/company/bulls-media"'>
-                <img src="res/img/instagram.webp" target="_blank" alt="LinkedIn Logo" style="
-                position: relative;
-                margin-right: 3vw;
-                max-width: 2vw;"
-                onclick='window.location = "https://www.instagram.com/usf_bullsmedia/"'>
-                <a href="https://www.twitch.tv/bullsmedia"><i class="bi bi-twitch" style="
-                color: #fff;
-                display: block;
-                position: relative;
-                margin-right: 3vw;
-                font-size: 2vw;"></i></a>
-            </div>
-        </div>
-
-        <!-- Top image + What We Do -->
-        <div id="topBox" style="position: relative; top: -5.5vw; overflow: auto; scroll-behavior: smooth;">
-            <div id="top"></div>
-            <div style="z-index: 5; position: absolute; top: 37vw; left: 47vw; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                <div style="font-size: 1vw; text-align: center; font-family: 'museo-sans'; color: #fff; text-shadow: 1px 1px #000;">Beta version</div>
-            </div>
+        <!-- Hero image + What We Do -->
+        <div id="topBox" 
+        style="position: relative;
+        overflow: scroll; 
+        scroll-behavior: smooth;">
+            <div id="top" style="position: relative; top: -5.5vmax;"></div>
             <div style="position: relative;
             height: 100vh;">
-                <!-- Top box -->
+                <!-- Hero image -->
                 <div style="display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: relative;
-                    width: 100%;
-                    height: 75vw;
-                    background-image: url(res/img/bgTop.webp);
-                    background-size: cover;">
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                width: 100%;
+                height: 125vh;
+                background-image: url(res/img/bgTop.webp);
+                background-size: cover;
+                background-position: center;">
                     <img style="position: relative;
-                    width: 30vw;
-                    top: -10vw;
+                    top: -10vh;
+                    width: 35vmax;
                     box-shadow: #000;"
                     src="res/img/fgTop.webp" 
-                    alt="The Bulls Media logo."/>
+                    alt="The Bulls Media logo"/>
                 </div>
                 <!-- What We Do -->
                 <div style="display: flex;
                 flex-direction: column;
-                align-items: center;
-                position: relative;">
+                align-items: center;">
                     <!-- What we do box -->
-                    <div id="what-we-do" style="position: relative; top: -13.5vw;"></div>
-                    <div style="display: flex;
+                    <div id="what-we-do" style="position: relative; top: -11vmax;"></div>
+                    <div class="container-fluid row" 
+                    style="display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 100%;
+                    background-color: var(--bmGreen);">
+                        <div class="col-4 py-2"
+                        style="z-index: 3;
+                        position: relative;
+                        top: -5vh;
+                        left: -5vw;
+                        display: flex;
                         justify-content: center;
                         align-items: center;
-                        position: relative;
-                        height: 65vw;
-                        width: 100%;
-                        background-color: var(--bmGreen);">
-                        <div style="z-index: 3;
-                            position: absolute;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            background-color: var(--bmGreen);
-                            border-radius: 50px;
-                            width: 27vw;
-                            top: -9vw;
-                            left: 22vw;
-                            height: 8vw;">
-                            <div class="boldText" style="
-                                font-size: 4vw;
-                                color: #fff;">
+                        background-color: var(--bmGreen);
+                        border-radius: 50px;">
+                            <div class="boldText" 
+                            style="font-size: 4vw;
+                            color: #fff;">
                                 What We Do
                             </div>
                         </div>
-                        <div style="display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            position: relative;
-                            top: -5vw;
-                            height: 65vw;
-                            width: 65vw;
-                            border-radius: 50px;
-                            background-color: #fff;
-                            color: #222;
-                            box-shadow: 10px 10px 20px 2px #2226;">
-                            <div class="descText" style="position: relative;
-                                margin-top: 7vw;
-                                width: 51vw;
-                                font-size: 1.5vw;
-                                text-align: center;"><b>
-                                Bulls Media </b>is a student-run agency dedicated to providing services 
-                                and equipment to students from all facets of the media landscape, 
-                                including industry-standard <a href="#services">Recording Software and Hardware,</a> 
-                                DJ lessons, MC-ing for events on campus, and marketing and 
-                                promotional assistance for USF student organizations.
+                        <div class="col-8 pb-5"
+                        style="position: relative;
+                        top: -7vh;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border-radius: 50px;
+                        background-color: #fff;
+                        color: #222;
+                        box-shadow: 10px 10px 20px 2px #2226;">
+                            <div class="descText col-9 mt-5" 
+                            style="font-size: 3.5vmin;
+                            text-align: center;">
+                                <b>Bulls Media </b>is a student-run agency 
+                                dedicated to providing services and equipment 
+                                to students from all facets of the media 
+                                landscape, including industry-standard 
+                                <a href="#services">Recording Software and 
+                                Hardware,</a> DJ lessons, MC-ing for events 
+                                on campus, and marketing and promotional 
+                                assistance for USF student organizations.
                             </div>
-                            <div class="descText" style="position: relative;
-                                margin-top: 4vw;
-                                margin-left: 17vw;
-                                width: 35vw;
-                                font-size: 1.5vw;
-                                text-align: left;">
-                                Our team operates on a simple core mantra: students should be able 
-                                to get real-world experience working with peers from many different 
-                                disciplines, and come together to make something truly special. 
-                                Feel free to stop by our office any time to meet the staff and see 
-                                where the magic happens! Located on the first floor of the MSC, next to the Bull-Pen.
+                            <img src="res/img/microphone.webp" 
+                            alt="A microphone" 
+                            class="m-5"
+                            style="border-radius: 50px;
+                            width: 25vw;"/>
+                            <div class="descText col-9" 
+                            style="font-size: 3.5vmin;
+                            text-align: center;">
+                                Our team operates on a simple core mantra: 
+                                students should be able to get real-world 
+                                experience working with peers from many different 
+                                disciplines, and come together to make something 
+                                truly special. Feel free to stop by our office 
+                                any time to meet the staff and see where the 
+                                magic happens! Located on the first floor of 
+                                the MSC, next to the Bull-Pen.
                             </div>
-                            <img src="res/img/microphone.webp" alt="A microphone" style="position: absolute;
-                                border-radius: 50px;
-                                width: 25vw;
-                                left: -7vw;
-                                top: 22.5vw;"/>
-                            <img src="res/img/frontImg2.webp" alt="Two people talking in front of microphones" style="position: absolute;
-                            border-radius: 50px;
-                            width: 25vw;
-                            top: 45vw;"/>
+                            <img src="res/img/frontImg2.webp" 
+                            alt="Two people talking in front of microphones"
+                            class="m-5"
+                            style="border-radius: 50px;
+                            width: 25vw;"/>
                         </div>
                     </div>
                 </div>
@@ -213,12 +170,12 @@
         <div style="display: flex;
         flex-direction: column;
         align-items: center;
-        height: 94.5vh;
+        height: 100vh;
         overflow: scroll;
         scroll-behavior: smooth;
         position: relative;">
-            <div id="services" style="position: relative; top: -5.5vw;"></div>
-            <div class="my-3"
+            <div id="services" style="position: relative; top: -5.5vmax;"></div>
+            <div class="my-5"
             style= "font-size: 4vw;
             font-family: 'Antapani', Arial, sans-serif;">
                 Services</div>
@@ -323,11 +280,11 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        height: 94.5vh;
+        height: 100vh;
         overflow: scroll;
         scroll-behavior: smooth;
         background-color: #fff;">
-            <div id="calendar" style="position: relative; top: -5.5vw;"></div>
+            <div id="events" style="position: relative; top: -5.5vmax;"></div>
             <div class="mt-5"
             style="display: block;
             position: relative;
@@ -335,7 +292,6 @@
             font-family: 'Antapani', Helvetica, sans-serif;">
                 Upcoming Events
             </div>
-            <script src="events.js"></script>
             <div id="eventParent"
             style="margin-bottom: 10vh;"
             class="container-fluid row">
@@ -351,39 +307,35 @@
         </div>
 
         <!-- Get involved -->
-        <div style="display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-            width: 100%;
-            height: 60vw;
-            background-color: var(--bmGold);">
-            <div id="get-involved" style="position: relative; top: -5.5vw;"></div>
-            <div style="display: inline-block;
-                position: relative;
-                justify-content: center;
-                top: 4vw;
-                font-size: 4vw;
-                font-family: 'Antapani', Helvetica, sans-serif;">
+        <div class="container-fluid row"
+        style="display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        background-color: var(--bmGold);">
+            <div id="get-involved" class="pb-5" style="position: relative; top: -5.5vmax;"></div>
+            <div class="col-12 py-5" 
+            style="text-align: center;
+            font-size: 4vw;
+            font-family: 'Antapani', Helvetica, sans-serif;">
                 Get Involved
             </div>
-            <div style="position: relative;
-                background-color:  #fff;
-                top: 7vw;
-                border-radius: 50px;
-                width: 60vw;
-                height: 30vw;">
+            <div class="col-12 py-5 container-fluid row"
+            style="display: flex;
+            justify-content: center;
+            align-items: center;">
                 <iframe src= "https://forms.office.com/Pages/ResponsePage.aspx?id=3vcbdOXi30aNZ4Jgffneqh_NZvydRClAuZNycZKc_r1UNUFUUTlTNkxPREEzU1Y1OUU5UU1YSlVIMi4u&embed=true" 
                 frameborder= "0" 
                 marginwidth= "0" 
                 marginheight= "0" 
                 style="
-                width: 60vw;
-                height: 30vw;
+                height: 50vh;
                 border: none; 
-                border-radius: 50px; 
-                max-width:100%; 
-                max-height:100vh" 
+                border-radius: 50px;" 
+                class="col-8"
                 allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
             </div>
         </div>
@@ -393,7 +345,7 @@
         height: 100vh;
         overflow: auto;
         scroll-behavior: smooth;">
-            <div id="contact-us" style="position: relative; top: -5.5vw;"></div>
+            <div id="contact-us" class="pb-5" style="position: relative; top: -5.5vmax;"></div>
             <div style="display: flex;
             flex-direction: column;
             justify-content: center;
@@ -402,8 +354,8 @@
             width: 100%;
             background-color: #fff;">
                 <div style="position: relative;
-                margin-top: 4vw;
-                margin-bottom: 3vw;
+                margin-top: 2vmax;
+                margin-bottom: 2vmax;
                 width: 24vw;
                 font-size: 4vw;
                 font-family: 'Antapani', Helvetica, sans-serif;
@@ -432,6 +384,55 @@
                         <div class="fontInfo"><em><a href=mailto:bullsmedia-associatedirector@usf.edu>bullsmedia-associatedirector@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
+                        <img src="res/img/staffTalia.webp">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                        text-shadow: 5px 5px #EDEBD1;
+                        font-size: 3vmax;">
+                            Talia Coon</div>
+                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
+                        <div class="fontInfo"><em><a href=mailto:bullsmedia-graphicdesigner@usf.edu>bullsmedia-graphicdesigner@usf.edu</a></em></div>
+                    </div>
+                    <div class="contactChild col-12 col-lg-5 p-5">
+                        <img src="res/img/staffCaleb.webp">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                        text-shadow: 5px 5px #EDEBD1;
+                        font-size: 3vmax;
+                        margin-top: 10px;">
+                            Caleb Stockton</div>
+                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
+                        <div class="fontInfo"><em><a href=mailto:cwstockton@usf.edu>cwstockton@usf.edu</a></em></div>
+                    </div>
+                    <div class="contactChild col-12 col-lg-5 p-5">
+                        <img src="res/img/staffJosh.webp">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                        text-shadow: 5px 5px #EDEBD1;
+                        font-size: 3vmax;
+                        margin-top: 10px;">
+                            Joshua Lombino</div>
+                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
+                        <div class="fontInfo"><em><a href=mailto:jlombino@usf.edu>jlombino@usf.edu</a></em></div>
+                    </div>
+                    <div class="contactChild col-12 col-lg-5 p-5">
+                        <img src="res/img/staffDefault.webp">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                        text-shadow: 5px 5px #EDEBD1;
+                        font-size: 3vmax;
+                        margin-top: 10px;">
+                            Julianna Quinones</div>
+                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
+                        <div class="fontInfo"><em><a href=mailto:jhquinones@usf.edu>jhquinones@usf.edu</a></em></div>
+                    </div>
+                    <div class="contactChild col-12 col-lg-5 p-5">
+                        <img src="res/img/staffAlexandria.webp">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                        text-shadow: 5px 5px #EDEBD1;
+                        font-size: 3vmax;
+                        margin-top: 10px;">
+                            Alexandria Hickey</div>
+                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
+                        <div class="fontInfo"><em><a href=mailto:jinsunbud@usf.edu>jinsunbud@usf.edu</a></em></div>
+                    </div>
+                    <div class="contactChild col-12 col-lg-5 p-5">
                         <img src="res/img/staffDenise.webp">
                         <div class="fontHeader" style="color: var(--bmGreen); 
                         text-shadow: 5px 5px #EDEBD1;
@@ -448,15 +449,6 @@
                             Paula Marcatto</div>
                         <div class="fontInfo" style="color: #222;"><em>Outreach Coordinator</em></div>
                         <div class="fontInfo"><em><a href=mailto:BullsMedia-ProgramCoord@usf.edu>BullsMedia-ProgramCoord@usf.edu</a></em></div>
-                    </div>
-                    <div class="contactChild col-12 col-lg-5 p-5">
-                        <img src="res/img/staffTalia.webp">
-                        <div class="fontHeader" style="color: var(--bmGreen); 
-                        text-shadow: 5px 5px #EDEBD1;
-                        font-size: 3vmax;">
-                            Talia Coon</div>
-                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
-                        <div class="fontInfo"><em><a href=mailto:bullsmedia-graphicdesigner@usf.edu>bullsmedia-graphicdesigner@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
                         <img src="res/img/staffRamsey.webp">
@@ -487,8 +479,34 @@
                         <div class="fontInfo" style="color: #222;"><em>DJ</em></div>
                         <div class="fontInfo"><em><a href=mailto:mkleman1@usf.edu>mkleman1@usf.edu</a></em></div>
                     </div>
+                    <div class="contactChild col-12 col-lg-5 p-5">
+                        <img src="res/img/staffDefault.webp">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                        text-shadow: 5px 5px #EDEBD1;
+                        font-size: 3vmax;
+                        margin-top: 10px;">
+                            Haley Stewart</div>
+                        <div class="fontInfo" style="color: #222;"><em>DJ</em></div>
+                        <div class="fontInfo"><em><a href=mailto:stwearth1@usf.edu>stwearth1@usf.edu</a></em></div>
+                    </div>
+                    <div class="contactChild col-12 col-lg-5 p-5">
+                        <img src="res/img/staffDefault.webp">
+                        <div class="fontHeader" style="color: var(--bmGreen); 
+                        text-shadow: 5px 5px #EDEBD1;
+                        font-size: 3vmax;
+                        margin-top: 10px;">
+                            Thomas Defreitas</div>
+                        <div class="fontInfo" style="color: #222;"><em>DJ</em></div>
+                        <div class="fontInfo"><em><a href=mailto:defreitas1@usf.edu>defreitas1@usf.edu</a></em></div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <script src="events.js"></script>
+        <!-- Bootstrap JS + Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"></script>
     </body>
 </html>

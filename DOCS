@@ -1,4 +1,4 @@
-Hello. This document explains in painstaking detail the layout of this code.
+Hello. This document explains the layout of this code.
 
 Table of Contents:
 ------------------
@@ -17,6 +17,7 @@ Background information
 HTML, CSS, JS, Bootstrap CSS framework
 HTML body is scroll locked such that each individual section is its
 own scrollable element.
+Anchors for internal linking have bottom margins to make room for the Navbar
 
 Known issues:
 - No smooth scroll on Safari
@@ -26,8 +27,10 @@ index.html
 ------------------
     Header
 ------------------
-lorem
-
+- Bootstrap Navbar
+- Breaks at large breakpoint; links are in dropdown on small screens
+- Social media links are boostrap icons
+- Styles overridden in index.css
 
 ------------------
     Hero image / What We Do
@@ -37,7 +40,25 @@ lorem
 ------------------
     Services links
 ------------------
+- Bootstrap container-fluid element as a single row.
+- Each service is a column, the DJ service uses full width up top due to 
+  popularity.
+- Other services are column width 10 if the window is below large breakpoint,
+  and column width 5 otherwise.
+- Proper sizing is reliant on images inside the service being 901x383 or of
+  equivalent aspect ratio.
+- Image vanishes on hover to reveal text. User is assumed on desktop if above
+  large breakpoint.
+- If below large breakpoint, a mobile client is assumed and text is shown under
+  the image as well, since hovering is impossible on mobile.
 
+DJ Events: https://cglink.me/2k5/s50030
+HYPE form: https://cglink.me/2k5/s50112
+Room booking: https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/
+
+
+Known issues:
+- Incorrect text rendering under image during hover transition on Safari
 
 ------------------
     Events list
@@ -67,7 +88,7 @@ Execution flow
 - getEvents() is responsible for backend communication with the server
 - The server returns an array object with nested arrays for each event in the
   table, and getEvents calls populateEvents with the returned data.
-- populateEvents removes all elements inside theeventParent element. 
+- populateEvents removes all elements inside the eventParent element. 
   "No Events Found" is displayed by default in the event the user has JS 
   disabled.
 - For every array inside the eventArray object, a new parent div is created.
@@ -93,8 +114,21 @@ TODO
     Volunteer form link
 ------------------
 
+- Bootstrap container-fluid with and row as the parent
+- Text as a full-width col
+- iframe with col-8 width and 50vh height
+
+Collect responses: https://forms.office.com/Pages/ResponsePage.aspx?id=3vcbdOXi30aNZ4Jgffneqh_NZvydRClAuZNycZKc_r1UNUFUUTlTNkxPREEzU1Y1OUU5UU1YSlVIMi4u&embed=true
+
+View responses/edit the form: https://forms.office.com/Pages/DesignPage.aspx?fragment=FormId%3D3vcbdOXi30aNZ4Jgffneqh_NZvydRClAuZNycZKc_r1UNUFUUTlTNkxPREEzU1Y1OUU5UU1YSlVIMi4u%26Token%3Da47dfda4251b4fe38a401fa625401668
 
 
 ------------------
     Contact us ie staff list
 ------------------
+- Bootstrap container-fluid element as a single row
+- Each staff member is its own column, with a column width of 12 if window size
+  is below the large breakpoint, and column width of 5 otherwise.
+- Each staff member has a listed name, position, and email. Their images are
+  individually made for the site, and a placeholder is used if the staff member
+  does not wish to have a picture.
