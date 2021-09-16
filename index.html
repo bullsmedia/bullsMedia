@@ -113,7 +113,7 @@
                         border-radius: 50px;">
                             <div class="boldText" 
                             style="font-size: 4vw;
-                            color: #fff;">
+                            color: var(--bmLight);">
                                 What We Do
                             </div>
                         </div>
@@ -124,8 +124,8 @@
                         flex-direction: column;
                         align-items: center;
                         border-radius: 50px;
-                        background-color: #fff;
-                        color: #222;
+                        background-color: var(--bmLight);
+                        color: var(--bmDark);
                         box-shadow: 10px 10px 20px 2px #2226;">
                             <div class="descText col-9 mt-5" 
                             style="font-size: 3.5vmin;
@@ -223,7 +223,7 @@
                                 style="background-color: #22adaf;
                                 max-width: 20vw;">
                                 <div class="d-block d-lg-none m-3"
-                                style="color: #222;
+                                style="color: var(--bmDark);
                                 font-size: clamp(30px, 3vw, 50px);
                                 font-family: 'museo-sans', sans-serif;">
                                     Hire our DJs
@@ -252,7 +252,7 @@
                                 max-height: 30vh;
                                 background-color: #f9c13a;">
                                 <div class="d-block d-lg-none m-3"
-                                style="color: #222;
+                                style="color: var(--bmDark);
                                 font-size: clamp(30px, 3vw, 50px);
                                 font-family: 'museo-sans', sans-serif;">
                                     HYPE Services
@@ -283,7 +283,7 @@
                                 max-height: 30vh;
                                 background-color: #e95536;">
                                 <div class="d-block d-lg-none m-3"
-                                style="color: #222;
+                                style="color: var(--bmDark);
                                 font-size: clamp(30px, 3vw, 50px);
                                 font-family: 'museo-sans', sans-serif;">
                                     Book our Studios
@@ -291,209 +291,158 @@
                             </a>
                         </div>
                     </div>
-                    <div class="carousel-item row m-auto mb-5">
-                        <div class="mb-3">
-                            <a type="button" 
-                            data-bs-target="#serviceCarousel" 
-                            data-bs-slide="prev"
-                            class="p-3"
-                            style="background-color: #e95536;
-                            border-radius: 50px;
-                            color: #222;">
+                    <div class="carousel-item row m-auto mb-5"
+                    style="background-color: var(--bmGreen);
+                    border-radius: 50px;
+                    overflow: hidden;
+                    text-align: center;">
+                        <div class="p-3 col-12"
+                        style="background-color: #e95536;
+                        text-align: center;">
+                            <a data-bs-target="#serviceCarousel" 
+                            data-bs-slide="prev">
                                 <i class="bi bi-chevron-left"
-                                style="font-size: 2vmax;">Back to Services</i>
+                                style="font-size: 2vmax; 
+                                color: var(--bmDark);">Back to Services</i>
                             </a>
                         </div>
-                        <div class="m-auto col-10 row p-4 my-4"
-                        style="border-radius: 50px;
-                        background-color: var(--bmGreen);">
-                            <div id="podcastCarousel" class="carousel slide col-4 my-auto" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#podcastCarousel" data-bs-slide-to="0" class="active"
-                                        aria-current="true" aria-label="Slide 1"></button>
-                                    <!-- <button type="button" data-bs-target="#podcastCarousel" data-bs-slide-to="1"
-                                        aria-label="Slide 2"></button> -->
-                                </div>
-                                <div class="carousel-inner" style="border-radius: 50px;">
-                                    <div class="carousel-item active">
-                                        <img src="res/img/servicePodcastHero.webp" alt="Podcast studio hero image" class="d-block w-100">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#podcastCarousel"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#podcastCarousel"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                        <div class="p-4 col-12 row">
+                            <div class="col-6"">
+                                <img src="res/img/servicePodcastHero.webp"
+                                alt="Podcast studio hero image" 
+                                class="d-block w-100"
+                                style="border-radius: 50px;">
                             </div>
-                            <a class="col-8 p-4 ms-auto" 
-                            href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
-                                <div class="fontHeader"
-                                style="color: #fff;">
-                                    Podcast Studio 
-                                </div>
-                                <div class="fontSubHeader"
-                                style="color: #fff;">
-                                    Make your voice heard through a completely 
-                                    self-produced Podcast! All hardware and 
-                                    software provided, as well as links to 
-                                    resources for learning and further 
-                                    instruction. Includes four mics, an iMac, 
-                                    and an audio interface. Seats four people. 
-                                </div>
-                                <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
-                                style="border-radius: 50px;
-                                text-align: center;
-                                background-color: var(--bmGold);
-                                color: #222;">
-                                    Book Now!
-                                </div>
-                            </a>
+                            <div class="col-6">
+                                <a href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
+                                    <div class="fontHeader"
+                                    style="color: var(--bmLight);">
+                                        Podcast Studio 
+                                    </div>
+                                    <div class="fontSubHeader"
+                                    style="color: var(--bmLight);">
+                                        Make your voice heard through a completely 
+                                        self-produced Podcast! All hardware and 
+                                        software provided, as well as links to 
+                                        resources for learning and further 
+                                        instruction. Includes four mics, an iMac, 
+                                        and an audio interface. Seats four people. 
+                                    </div>
+                                    <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
+                                    style="border-radius: 50px;
+                                    text-align: center;
+                                    background-color: var(--bmGold);
+                                    color: var(--bmDark);">
+                                        Book Now!
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="m-auto col-10 row p-4 my-4"
-                        style="border-radius: 50px;
-                        background-color: var(--bmGreen);">
-                            <div id="productionCarousel" class="carousel slide col-4 my-auto" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#productionCarousel" data-bs-slide-to="0" class="active"
-                                        aria-current="true" aria-label="Slide 1"></button>
-                                </div>
-                                <div class="carousel-inner" style="border-radius: 50px;">
-                                    <div class="carousel-item active">
-                                        <img src="res/img/serviceProductionHero.webp" alt="Production room hero image" class="d-block w-100">
+                        <div class="p-4 col-12 row">
+                            <div class="col-6 my-auto">
+                                <a class="col-8 p-4 ms-auto" 
+                                href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
+                                    <div class="fontHeader"
+                                    style="color: var(--bmLight);">
+                                        Production Room 
                                     </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#productionCarousel"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#productionCarousel"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                    <div class="fontSubHeader"
+                                    style="color: var(--bmLight);">
+                                        With a cutting-edge Mac Pro and industry-
+                                        leading software, this room is best suited 
+                                        for music production, video editing, and 
+                                        sound engineering! Book in conjunction with 
+                                        our Live Room and record using instruments 
+                                        and microphones in the larger space! 
+                                        Seats one person.
+                                    </div>
+                                    <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
+                                    style="border-radius: 50px;
+                                    text-align: center;
+                                    background-color: var(--bmGold);
+                                    color: var(--bmDark);">
+                                        Book Now!
+                                    </div>
+                                </a>
                             </div>
-                            <a class="col-8 p-4 ms-auto" 
-                            href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
-                                <div class="fontHeader"
-                                style="color: #fff;">
-                                    Production Room 
-                                </div>
-                                <div class="fontSubHeader"
-                                style="color: #fff;">
-                                    With a cutting-edge Mac Pro and industry-
-                                    leading software, this room is best suited 
-                                    for music production, video editing, and 
-                                    sound engineering! Book in conjunction with 
-                                    our Live Room and record using instruments 
-                                    and microphones in the larger space! 
-                                    Seats one person.
-                                </div>
-                                <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
-                                style="border-radius: 50px;
-                                text-align: center;
-                                background-color: var(--bmGold);
-                                color: #222;">
-                                    Book Now!
-                                </div>
-                            </a>
+                            <div class="col-6 my-auto">
+                                <img src="res/img/serviceProductionHero.webp" 
+                                alt="Production room hero image" 
+                                class="d-block w-100"
+                                style="border-radius: 50px;">
+                            </div>
                         </div>
-                        <div class="m-auto col-10 row p-4 my-4"
-                        style="border-radius: 50px;
-                        background-color: var(--bmGreen);">
-                            <div id="liveCarousel" class="carousel slide col-4 my-auto" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#liveCarousel" data-bs-slide-to="0" class="active"
-                                        aria-current="true" aria-label="Slide 1"></button>
-                                </div>
-                                <div class="carousel-inner" style="border-radius: 50px;">
-                                    <div class="carousel-item active">
-                                        <img src="res/img/serviceLiveHero.webp" alt="Live room hero image" class="d-block w-100">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#liveCarousel"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#liveCarousel"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                        <div class="p-4 col-12 row">
+                            <div class="col-6 my-auto">
+                                <img src="res/img/serviceLiveHero.webp" 
+                                alt="Live room hero image" 
+                                class="d-block w-100"
+                                style="border-radius: 50px;">
                             </div>
-                            <a class="col-8 p-4 ms-auto" 
-                            href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
-                                <div class="fontHeader"
-                                style="color: #fff;">
-                                    Live Room 
-                                </div>
-                                <div class="fontSubHeader"
-                                style="color: #fff;">
-                                    Our biggest space offered: home to a drum 
-                                    set, upright piano, keyboard, mixing 
-                                    console, and top-of-the-line recording 
-                                    microphones!
-                                </div>
-                                <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
-                                style="border-radius: 50px;
-                                text-align: center;
-                                background-color: var(--bmGold);
-                                color: #222;">
-                                    Book Now!
-                                </div>
-                            </a>
+                            <div class="col-6 my-auto">
+                                <a class="col-8 p-4 ms-auto" 
+                                href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
+                                    <div class="fontHeader"
+                                    style="color: var(--bmLight);">
+                                        Live Room 
+                                    </div>
+                                    <div class="fontSubHeader"
+                                    style="color: var(--bmLight);">
+                                        Our biggest space offered: home to a drum 
+                                        set, upright piano, keyboard, mixing 
+                                        console, and top-of-the-line recording 
+                                        microphones!
+                                    </div>
+                                    <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
+                                    style="border-radius: 50px;
+                                    text-align: center;
+                                    background-color: var(--bmGold);
+                                    color: var(--bmDark);">
+                                        Book Now!
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="m-auto col-10 row p-4 my-4"
-                        style="border-radius: 50px;
-                        background-color: var(--bmGreen);">
-                            <div id="djCarousel" class="carousel slide col-4 my-auto" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#djCarousel" data-bs-slide-to="0" class="active"
-                                        aria-current="true" aria-label="Slide 1"></button>
-                                </div>
-                                <div class="carousel-inner" style="border-radius: 50px;">
-                                    <div class="carousel-item active">
-                                        <img src="res/img/serviceDJHero.webp" alt="DJ room hero image" class="d-block w-100">
+                        <div class="p-4 col-12 row">
+                            <div class="col-6 my-auto">
+                                <a class="col-8 p-4 ms-auto" 
+                                href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
+                                    <div class="fontHeader"
+                                    style="color: var(--bmLight);">
+                                        DJ Room 
                                     </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#djCarousel"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#djCarousel"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                    <div class="fontSubHeader"
+                                    style="color: var(--bmLight);">
+                                        This room offers a turn table and speakers 
+                                        for any prospective DJ to hone their 
+                                        skills! Come learn how to DJ from the best 
+                                        USF has to offer with the Bulls Media DJs! 
+                                        Lesson availability varies.
+                                    </div>
+                                    <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
+                                    style="border-radius: 50px;
+                                    text-align: center;
+                                    background-color: var(--bmGold);
+                                    color: var(--bmDark);">
+                                        Book Now!
+                                    </div>
+                                </a>
                             </div>
-                            <a class="col-8 p-4 ms-auto" 
-                            href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
-                                <div class="fontHeader"
-                                style="color: #fff;">
-                                    DJ Room 
-                                </div>
-                                <div class="fontSubHeader"
-                                style="color: #fff;">
-                                    This room offers a turn table and speakers 
-                                    for any prospective DJ to hone their 
-                                    skills! Come learn how to DJ from the best 
-                                    USF has to offer with the Bulls Media DJs! 
-                                    Availability varies.
-                                </div>
-                                <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
-                                style="border-radius: 50px;
-                                text-align: center;
-                                background-color: var(--bmGold);
-                                color: #222;">
-                                    Book Now!
-                                </div>
+                            <div class="col-6 my-auto">
+                                <img src="res/img/serviceDJHero.webp" 
+                                alt="DJ room hero image" 
+                                class="d-block w-100"
+                                style="border-radius: 50px;">
+                            </div>
+                        </div>
+                        <div class="p-3 col-12"
+                        style="background-color: #e95536;
+                        text-align: center;">
+                            <a data-bs-target="#serviceCarousel" 
+                            data-bs-slide="prev">
+                                <i class="bi bi-chevron-left"
+                                style="font-size: 2vmax; 
+                                color: var(--bmDark);">Back to Services</i>
                             </a>
                         </div>
                     </div>
@@ -509,7 +458,7 @@
         height: 100vh;
         overflow: scroll;
         scroll-behavior: smooth;
-        background-color: #fff;">
+        background-color: var(--bmLight);">
             <div id="events" style="position: relative; top: -5.5vmax;"></div>
             <div class="mt-5"
             style="display: block;
@@ -578,7 +527,7 @@
             align-items: center;
             position: relative;
             width: 100%;
-            background-color: #fff;">
+            background-color: var(--bmLight);">
                 <div style="position: relative;
                 margin-top: 2vmax;
                 margin-bottom: 2vmax;
@@ -598,7 +547,7 @@
                         text-shadow: 5px 5px #EDEBD1;
                         font-size: 3vmax;">
                             Richard Dalpe</div>
-                        <div class="fontInfo" style="color: #222;"><em>Director</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>Director</em></div>
                         <div class="fontInfo"><em><a href=mailto:bullsmedia-director@usf.edu>bullsmedia-director@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -607,7 +556,7 @@
                         text-shadow: 5px 5px #EDEBD1;
                         font-size: 3vmax;">
                             Miles Womack</div>
-                        <div class="fontInfo" style="color: #222;"><em>Associate Director</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>Associate Director</em></div>
                         <div class="fontInfo"><em><a href=mailto:bullsmedia-associatedirector@usf.edu>bullsmedia-associatedirector@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -616,7 +565,7 @@
                         text-shadow: 5px 5px #EDEBD1;
                         font-size: 3vmax;">
                             Talia Coon</div>
-                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>Graphic Designer</em></div>
                         <div class="fontInfo"><em><a href=mailto:bullsmedia-graphicdesigner@usf.edu>bullsmedia-graphicdesigner@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -626,7 +575,7 @@
                         font-size: 3vmax;
                         margin-top: 10px;">
                             Caleb Stockton</div>
-                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>Graphic Designer</em></div>
                         <div class="fontInfo"><em><a href=mailto:cwstockton@usf.edu>cwstockton@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -636,7 +585,7 @@
                         font-size: 3vmax;
                         margin-top: 10px;">
                             Joshua Lombino</div>
-                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>Graphic Designer</em></div>
                         <div class="fontInfo"><em><a href=mailto:jlombino@usf.edu>jlombino@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -646,7 +595,7 @@
                         font-size: 3vmax;
                         margin-top: 10px;">
                             Julianna Quinones</div>
-                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>Graphic Designer</em></div>
                         <div class="fontInfo"><em><a href=mailto:jhquinones@usf.edu>jhquinones@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -656,7 +605,7 @@
                         font-size: 3vmax;
                         margin-top: 10px;">
                             Alexandria Hickey</div>
-                        <div class="fontInfo" style="color: #222;"><em>Graphic Designer</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>Graphic Designer</em></div>
                         <div class="fontInfo"><em><a href=mailto:jinsunbud@usf.edu>jinsunbud@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -665,7 +614,7 @@
                         text-shadow: 5px 5px #EDEBD1;
                         font-size: 3vmax;">
                             Denise Cury</div>
-                        <div class="fontInfo" style="color: #222;"><em>Assistant Director of Marketing</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>Assistant Director of Marketing</em></div>
                         <div class="fontInfo"><em><a href=mailto:denisecury@usf.edu>denisecury@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -674,7 +623,7 @@
                         text-shadow: 5px 5px #EDEBD1;
                         font-size: 3vmax;">
                             Paula Marcatto</div>
-                        <div class="fontInfo" style="color: #222;"><em>Outreach Coordinator</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>Outreach Coordinator</em></div>
                         <div class="fontInfo"><em><a href=mailto:BullsMedia-ProgramCoord@usf.edu>BullsMedia-ProgramCoord@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -683,7 +632,7 @@
                         text-shadow: 5px 5px #EDEBD1;
                         font-size: 3vmax;">
                             Ramsey Shaban</div>
-                        <div class="fontInfo" style="color: #222;"><em>Technology Coordinator</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>Technology Coordinator</em></div>
                         <div class="fontInfo"><em><a href=mailto:BullsMedia-Tech@usf.edu>BullsMedia-Tech@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -693,7 +642,7 @@
                         font-size: 3vmax;
                         margin-top: 10px;">
                             Spencer Gonzales</div>
-                        <div class="fontInfo" style="color: #222;"><em>DJ</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>DJ</em></div>
                         <div class="fontInfo"><em><a href=mailto:sgonzales@usf.edu>sgonzales@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -703,7 +652,7 @@
                         font-size: 3vmax;
                         margin-top: 10px;">
                             Michael Kleman</div>
-                        <div class="fontInfo" style="color: #222;"><em>DJ</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>DJ</em></div>
                         <div class="fontInfo"><em><a href=mailto:mkleman1@usf.edu>mkleman1@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -713,7 +662,7 @@
                         font-size: 3vmax;
                         margin-top: 10px;">
                             Haley Stewart</div>
-                        <div class="fontInfo" style="color: #222;"><em>DJ</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>DJ</em></div>
                         <div class="fontInfo"><em><a href=mailto:stwearth1@usf.edu>stwearth1@usf.edu</a></em></div>
                     </div>
                     <div class="contactChild col-12 col-lg-5 p-5">
@@ -723,7 +672,7 @@
                         font-size: 3vmax;
                         margin-top: 10px;">
                             Thomas Defreitas</div>
-                        <div class="fontInfo" style="color: #222;"><em>DJ</em></div>
+                        <div class="fontInfo" style="color: var(--bmDark);"><em>DJ</em></div>
                         <div class="fontInfo"><em><a href=mailto:defreitas1@usf.edu>defreitas1@usf.edu</a></em></div>
                     </div>
                 </div>

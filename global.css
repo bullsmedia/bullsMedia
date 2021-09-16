@@ -11,6 +11,8 @@
 :root{
 	--bmGreen: rgb(0, 100, 66);
     --bmGold: rgb(217, 208, 162);
+    --bmLight: #fff;
+    --bmDark: #222;
 }
 
 html{
