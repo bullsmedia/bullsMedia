@@ -59,18 +59,22 @@ body{
 .hoverGold:hover{
     background-color: var(--bmGold);
 }
-div div div .serviceImg{
+
+/* The only thing that works apparently */
+div div div div div a .serviceImg{
     transition: opacity .382s ease-in-out;
 }
-div div div:hover .serviceImg{
+
+div div div div div a:hover .serviceImg{
     opacity:0;
 }
-div div div:hover .serviceText{
+div div div div div a:hover .serviceText{
     opacity: 1;
 }
 .serviceText{
+    color: #222;
     opacity: 0;
-    font-size: 2.5vw;
+    font-size: 3vw;
 }
 .contactChild{
     display: flex;

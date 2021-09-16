@@ -14,7 +14,7 @@ index.html
 
 Background information
 ------------------
-HTML, CSS, JS, Bootstrap CSS framework
+HTML, CSS, JS, Bootstrap CSS+JS framework
 HTML body is scroll locked such that each individual section is its
 own scrollable element.
 Anchors for internal linking have bottom margins to make room for the Navbar
@@ -31,6 +31,7 @@ index.html
 - Breaks at large breakpoint; links are in dropdown on small screens
 - Social media links are boostrap icons
 - Styles overridden in index.css
+- Link to Services section also moves the carousel to slide 0.
 
 ------------------
     Hero image / What We Do
@@ -40,17 +41,21 @@ index.html
 ------------------
     Services links
 ------------------
-- Bootstrap container-fluid element as a single row.
-- Each service is a column, the DJ service uses full width up top due to 
-  popularity.
-- Other services are column width 10 if the window is below large breakpoint,
-  and column width 5 otherwise.
-- Proper sizing is reliant on images inside the service being 901x383 or of
-  equivalent aspect ratio.
-- Image vanishes on hover to reveal text. User is assumed on desktop if above
-  large breakpoint.
-- If below large breakpoint, a mobile client is assumed and text is shown under
-  the image as well, since hovering is impossible on mobile.
+- Bootstrap carousel with 2 slides:
+  - Slide 0
+    - Bootstrap container-fluid element as a single row.
+    - Each service is a column, the DJ service uses full width up top due to 
+      popularity.
+    - Other services are column width 10 if the window is below large 
+      breakpoint, and column width 5 otherwise.
+    - Proper sizing is reliant on images inside the service being 901x383 or of
+      equivalent aspect ratio.
+    - Image vanishes on hover to reveal text. User is assumed on desktop if
+      above large breakpoint.
+    - If below large breakpoint, a mobile client is assumed and text is shown
+      under the image as well, since hovering is impossible on mobile.
+  - Slide 1
+    - Details about each of the studios.
 
 DJ Events: https://cglink.me/2k5/s50030
 HYPE form: https://cglink.me/2k5/s50112
@@ -104,8 +109,8 @@ Execution flow
 
 Known issues
 - Safari is unable to parse date given in the start variable. Possibly due to
-  string representation using - instead of / e.g. 12-12-2020 while Safari expects
-  12/12/2020
+  string representation using - instead of / e.g. 12-12-2020 while Safari 
+  expects 12/12/2020
 
 TODO
 - format for mobile
@@ -132,3 +137,5 @@ View responses/edit the form: https://forms.office.com/Pages/DesignPage.aspx?fra
 - Each staff member has a listed name, position, and email. Their images are
   individually made for the site, and a placeholder is used if the staff member
   does not wish to have a picture.
+- Extra 10vmax on bottom margin because portrait canvases will cut off the 
+  bottom of the list. don't know why.
