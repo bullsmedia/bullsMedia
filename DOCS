@@ -36,7 +36,13 @@ index.html
 ------------------
     Hero image / What We Do
 ------------------
+- 125vh height div with a background image as the hero image
+- Centered Bulls Media logo on the hero image
+- What we do section is a Bootstrap row
+  - Each piece of text and image are separate rows
+  - Embedded video of how to reach the Bulls Media office at bottom
 
+Video link: https://youtu.be/uWa7NC5o6iI
 
 ------------------
     Services links
@@ -54,8 +60,17 @@ index.html
       above large breakpoint.
     - If below large breakpoint, a mobile client is assumed and text is shown
       under the image as well, since hovering is impossible on mobile.
-  - Slide 1
-    - Details about each of the studios.
+  - Slide 1 (Bootstrap row)
+    - Images for each room accompanied with a small description.
+    - Alternates image/description on left/right for each column
+    - 2 buttons
+      - Learn More
+        - Launches a modal (popup) to display detailed information for each
+          room. Half of the modal is an image gallery, the other is text
+      - Book Now
+        - Links to the room booking form
+- Modal elements are outside the main carousel because nested carousels are
+  unsupported. Having them outside makes the image carousels inside work
 
 DJ Events: https://cglink.me/2k5/s50030
 HYPE form: https://cglink.me/2k5/s50112

@@ -26,7 +26,8 @@
                     <i class="bi bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav w-100 mb-2 mb-lg-0">
+                    <ul class="navbar-nav w-100 mb-2 mb-lg-0"
+                    style="align-items: center;">
                         <li class="nav-item">
                             <a class="nav-link" href="#what-we-do">What We Do</a>
                         </li>
@@ -296,74 +297,98 @@
                     border-radius: 50px;
                     overflow: hidden;
                     text-align: center;">
-                        <div class="p-3 col-12"
+                        <div data-bs-target="#serviceCarousel" 
+                        data-bs-slide="prev"
+                        class="p-3 col-12"
                         style="background-color: #e95536;
                         text-align: center;">
-                            <a data-bs-target="#serviceCarousel" 
-                            data-bs-slide="prev">
-                                <i class="bi bi-chevron-left"
-                                style="font-size: 2vmax; 
-                                color: var(--bmDark);">Back to Services</i>
-                            </a>
+                            <i class="bi bi-chevron-left"
+                            style="font-size: 2vmax; 
+                            color: var(--bmDark);">
+                                Back to Services
+                            </i>
                         </div>
-                        <div class="p-4 col-12 row">
-                            <div class="col-6"">
+                        <div class="p-4 col-12 row"
+                        style="background-color: rgb(77, 133, 123);
+                        margin-left: 0 !important;">
+                            <div class="col-6 my-auto">
                                 <img src="res/img/servicePodcastHero.webp"
                                 alt="Podcast studio hero image" 
                                 class="d-block w-100"
                                 style="border-radius: 50px;">
                             </div>
-                            <div class="col-6">
-                                <a href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
-                                    <div class="fontHeader"
-                                    style="color: var(--bmLight);">
-                                        Podcast Studio 
-                                    </div>
-                                    <div class="fontSubHeader"
-                                    style="color: var(--bmLight);">
-                                        Make your voice heard through a completely 
-                                        self-produced Podcast! All hardware and 
-                                        software provided, as well as links to 
-                                        resources for learning and further 
-                                        instruction. Includes four mics, an iMac, 
-                                        and an audio interface. Seats four people. 
-                                    </div>
-                                    <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
+                            <div class="col-6 my-auto">
+                                <div class="fontHeader"
+                                style="color: var(--bmLight);">
+                                    Podcast Studio
+                                </div>
+                                <div class="fontSubHeader"
+                                style="color: var(--bmLight);">
+                                    Make your voice heard through a completely 
+                                    self-produced Podcast! All hardware and 
+                                    software provided, as well as links to 
+                                    resources for learning and further 
+                                    instruction. Includes four mics, an iMac, 
+                                    and an audio interface. Seats four people. 
+                                </div>
+                                <div class="col-12 row">
+                                    <a href="#servicePodcastModal"
+                                    data-bs-toggle="modal"
+                                    class="col-5 py-3 m-3 me-auto fontSubHeader"
+                                    style="border-radius: 50px;
+                                    text-align: center;
+                                    background-color: var(--bmGold);
+                                    color: var(--bmDark);">
+                                        Learn More!
+                                    </a>
+                                    <a href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/"
+                                    class="col-5 py-3 m-3 ms-auto fontSubHeader"
                                     style="border-radius: 50px;
                                     text-align: center;
                                     background-color: var(--bmGold);
                                     color: var(--bmDark);">
                                         Book Now!
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="p-4 col-12 row">
+                        <div class="p-4 col-12 row"
+                        style="background-color: rgb(30, 62, 72);
+                        margin-left: 0 !important;">
                             <div class="col-6 my-auto">
-                                <a class="col-8 p-4 ms-auto" 
-                                href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
-                                    <div class="fontHeader"
-                                    style="color: var(--bmLight);">
-                                        Production Room 
-                                    </div>
-                                    <div class="fontSubHeader"
-                                    style="color: var(--bmLight);">
-                                        With a cutting-edge Mac Pro and industry-
-                                        leading software, this room is best suited 
-                                        for music production, video editing, and 
-                                        sound engineering! Book in conjunction with 
-                                        our Live Room and record using instruments 
-                                        and microphones in the larger space! 
-                                        Seats one person.
-                                    </div>
-                                    <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
+                                <div class="fontHeader"
+                                style="color: var(--bmLight);">
+                                    Production Room 
+                                </div>
+                                <div class="fontSubHeader"
+                                style="color: var(--bmLight);">
+                                    With a cutting-edge Mac Pro and industry-
+                                    leading software, this room is best suited 
+                                    for music production, video editing, and 
+                                    sound engineering! Book in conjunction with 
+                                    our Live Room and record using instruments 
+                                    and microphones in the larger space! 
+                                    Seats one person.
+                                </div>
+                                <div class="col-12 row">
+                                    <a href="#serviceProductionModal"
+                                    data-bs-toggle="modal"
+                                    class="col-5 py-3 m-3 me-auto fontSubHeader"
+                                    style="border-radius: 50px;
+                                    text-align: center;
+                                    background-color: var(--bmGold);
+                                    color: var(--bmDark);">
+                                        Learn More!
+                                    </a>
+                                    <a href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/"
+                                    class="col-5 py-3 m-3 ms-auto fontSubHeader"
                                     style="border-radius: 50px;
                                     text-align: center;
                                     background-color: var(--bmGold);
                                     color: var(--bmDark);">
                                         Book Now!
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-6 my-auto">
                                 <img src="res/img/serviceProductionHero.webp" 
@@ -372,7 +397,9 @@
                                 style="border-radius: 50px;">
                             </div>
                         </div>
-                        <div class="p-4 col-12 row">
+                        <div class="p-4 col-12 row"
+                        style="background-color: rgb(202, 211, 199);
+                        margin-left: 0 !important;">
                             <div class="col-6 my-auto">
                                 <img src="res/img/serviceLiveHero.webp" 
                                 alt="Live room hero image" 
@@ -380,53 +407,73 @@
                                 style="border-radius: 50px;">
                             </div>
                             <div class="col-6 my-auto">
-                                <a class="col-8 p-4 ms-auto" 
-                                href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
-                                    <div class="fontHeader"
-                                    style="color: var(--bmLight);">
-                                        Live Room 
-                                    </div>
-                                    <div class="fontSubHeader"
-                                    style="color: var(--bmLight);">
-                                        Our biggest space offered: home to a drum 
-                                        set, upright piano, keyboard, mixing 
-                                        console, and top-of-the-line recording 
-                                        microphones!
-                                    </div>
-                                    <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
+                                <div class="fontHeader"
+                                style="color: var(--bmDark);">
+                                    Live Room 
+                                </div>
+                                <div class="fontSubHeader"
+                                style="color: var(--bmDark);">
+                                    Our biggest space offered: home to a drum 
+                                    set, upright piano, keyboard, mixing 
+                                    console, and top-of-the-line recording 
+                                    microphones!
+                                </div>
+                                <div class="col-12 row">
+                                    <a href="#serviceLiveModal"
+                                    data-bs-toggle="modal"
+                                    class="col-5 py-3 m-3 me-auto fontSubHeader"
+                                    style="border-radius: 50px;
+                                    text-align: center;
+                                    background-color: var(--bmGold);
+                                    color: var(--bmDark);">
+                                        Learn More!
+                                    </a>
+                                    <a href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/"
+                                    class="col-5 py-3 m-3 ms-auto fontSubHeader"
                                     style="border-radius: 50px;
                                     text-align: center;
                                     background-color: var(--bmGold);
                                     color: var(--bmDark);">
                                         Book Now!
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="p-4 col-12 row">
+                        <div class="p-4 col-12 row"
+                        style="background-color: rgb(34, 46, 81);
+                        margin-left: 0 !important;">
                             <div class="col-6 my-auto">
-                                <a class="col-8 p-4 ms-auto" 
-                                href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/">
-                                    <div class="fontHeader"
-                                    style="color: var(--bmLight);">
-                                        DJ Room 
-                                    </div>
-                                    <div class="fontSubHeader"
-                                    style="color: var(--bmLight);">
-                                        This room offers a turn table and speakers 
-                                        for any prospective DJ to hone their 
-                                        skills! Come learn how to DJ from the best 
-                                        USF has to offer with the Bulls Media DJs! 
-                                        Lesson availability varies.
-                                    </div>
-                                    <div class="col-12 p-3 mt-5 ms-auto fontSubHeader"
+                                <div class="fontHeader"
+                                style="color: var(--bmLight);">
+                                    DJ Room 
+                                </div>
+                                <div class="fontSubHeader"
+                                style="color: var(--bmLight);">
+                                    This room offers a turn table and speakers 
+                                    for any prospective DJ to hone their 
+                                    skills! Come learn how to DJ from the best 
+                                    USF has to offer with the Bulls Media DJs! 
+                                    Lesson availability varies.
+                                </div>
+                                <div class="col-12 row">
+                                    <a href="#serviceDJModal"
+                                    data-bs-toggle="modal"
+                                    class="col-5 py-3 m-3 me-auto fontSubHeader"
+                                    style="border-radius: 50px;
+                                    text-align: center;
+                                    background-color: var(--bmGold);
+                                    color: var(--bmDark);">
+                                        Learn More!
+                                    </a>
+                                    <a href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/"
+                                    class="col-5 py-3 m-3 ms-auto fontSubHeader"
                                     style="border-radius: 50px;
                                     text-align: center;
                                     background-color: var(--bmGold);
                                     color: var(--bmDark);">
                                         Book Now!
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-6 my-auto">
                                 <img src="res/img/serviceDJHero.webp" 
@@ -435,15 +482,116 @@
                                 style="border-radius: 50px;">
                             </div>
                         </div>
-                        <div class="p-3 col-12"
+                        <div data-bs-target="#serviceCarousel" 
+                        data-bs-slide="prev"
+                        class="p-3 col-12"
                         style="background-color: #e95536;
                         text-align: center;">
-                            <a data-bs-target="#serviceCarousel" 
-                            data-bs-slide="prev">
-                                <i class="bi bi-chevron-left"
-                                style="font-size: 2vmax; 
-                                color: var(--bmDark);">Back to Services</i>
-                            </a>
+                            <i class="bi bi-chevron-left"
+                            style="font-size: 2vmax; 
+                            color: var(--bmDark);">
+                                Back to Services
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="servicePodcastModal" class="modal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content" style="border-radius: 50px;">
+                        <div class="modal-header p-4"
+                        data-bs-dismiss="modal">
+                            <h5 class="modal-title m-auto">Bulls Media Podcast Studio</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <img src="res/img/staffJosh.webp" class="d-block w-100" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="res/img/staffJosh.webp" class="d-block w-100" alt="...">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="res/img/staffJosh.webp" class="d-block w-100" alt="...">
+                                          </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-6"
+                                style="overflow: scroll;">
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="serviceProductionModal" class="modal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content" style="border-radius: 50px;">
+                        <div class="modal-header p-4"
+                        data-bs-dismiss="modal">
+                            <h5 class="modal-title m-auto">Bulls Media Production Room</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Equipment list:
+                                <br/>- RME UFX+ Audio Interface with Focusrite Octopre ADAT expansions for 20 inputs 
+                                <br/>- Behringer Powerplay Headphone Monitoring system (for 4 people, or more if you share a station)
+                                <br/>- Mac Pro with Logic Pro X, Ableton 11 Suite, FL Studio (All Plugins), ProTools Ultimate, Native Instruments Komplete, FabFilter Pro Bundle, Sonarworks SoundID, iZotope Ozone, all Steven Slate plugins installed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="serviceLiveModal" class="modal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content" style="border-radius: 50px;">
+                        <div class="modal-header p-4"
+                        data-bs-dismiss="modal">
+                            <h5 class="modal-title m-auto">Bulls Media Live Room</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Equipment list:
+                                <br/>- M1 Mac Mini
+                                <br/>- Behringer X32 Producer
+                                <br/>- Behringer Powerplay Headphone Monitoring system
+                                <br/>- Yamaha Stage Custom with Zyldjian K Custom cymbals
+                                <br/>- SM7B with cloudlifter, Nueman TLM102s, Austrian Audio OC18 matched pair, Samson C02
+                                <br/>- Shure Beta52a, SM57s
+                                <br/>- Rupert Neve Active DI Box
+                                <br/>- HX Stomp
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="serviceDJModal" class="modal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content" style="border-radius: 50px;">
+                        <div class="modal-header p-4"
+                        data-bs-dismiss="modal">
+                            <h5 class="modal-title m-auto">Bulls Media DJ Room</h5>
+                        </div>
+                        <div class="modal-body">
                         </div>
                     </div>
                 </div>
