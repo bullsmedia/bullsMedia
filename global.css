@@ -26,7 +26,10 @@ a:link{
     color: var(--bmGreen);
 }
 a:hover{
-    color: rgb(25, 155, 110);
+    color: var(--bmDark);
+}
+a:active{
+    color: var(--bmGreen);
 }
 a:visited{
     color: var(--bmGold);
