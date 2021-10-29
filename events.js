@@ -14,10 +14,12 @@ var eventsList = (function(){
         },
         populateEvents: function(eventArray){
             // Remove everything inside eventParent div
-            while (document.querySelector("#eventParent").firstChild) {
-                document.querySelector("#eventParent").removeChild(
-                    document.querySelector("#eventParent").lastChild);
-            } // removing last child is faster than removing first
+            if(eventArray[0]){
+                while (document.querySelector("#eventParent").firstChild) {
+                    document.querySelector("#eventParent").removeChild(
+                        document.querySelector("#eventParent").lastChild);
+                } // removing last child is faster than removing first
+            }
 
             eventArray.forEach(array => {
                 var name = array[0];
