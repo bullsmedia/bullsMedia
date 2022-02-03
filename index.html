@@ -34,7 +34,7 @@
                         <li class="nav-item">
                             <a class="nav-link"
                             href="#services"
-                            onclick="bootstrap.Carousel.getInstance(document.querySelector('#serviceCarousel')).to(0);">
+                            onclick="bootstrap.Carousel.getInstance(document.querySelector('#serviceCarousel')).to(1);">
                                 Services
                             </a>
                         </li>
@@ -144,13 +144,13 @@
                             <div style="background-color: var(--bmGreen);
                             border-radius: 50px;"
                             class="p-5 m-5">
-                                <iframe width="560" 
-                                height="315" 
-                                src="https://www.youtube.com/embed/uWa7NC5o6iI" 
+                                <iframe width="560" height="315" 
+                                src="https://www.youtube-nocookie.com/embed/RzdcRSW7YBg" 
                                 title="YouTube video player" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen></iframe>
+                                allowfullscreen>
+                                </iframe>
                             </div>
                             <div class="descText col-9" 
                             style="font-size: 3.5vmin;
@@ -194,6 +194,93 @@
             data-bs-touch="false"
             data-bs-interval="false">
                 <div class="carousel-inner">
+                    <div class="carousel-item row m-auto px-5 pb-5 mb-5"
+                    style="text-align: center;
+                    overflow: visible;
+                    float: none;">
+                        <div class="m-auto mb-5"
+                        style="float: none;
+                        background-color: var(--bmGreen);
+                        border-radius: 50px;
+                        overflow: hidden;
+                        width: 85%;">        
+                            <div data-bs-target="#serviceCarousel" 
+                            data-bs-slide="next"
+                            class="p-3 col-12"
+                            style="background-color: var(--bmGreen);
+                            text-align: center;
+                            font-size: 2vmax; 
+                            color: var(--bmLight);">
+                                Back to Services
+                                <i class="bi bi-chevron-right">
+                                </i>
+                            </div>
+                            <div class="row w-100 p-5 m-3">
+                                <div class="col-6">
+                                    <a href="https://cglink.me/2k5/s50112"
+                                    data-bs-toggle="modal"
+                                    class="p-4 m-4 fontSubHeader"
+                                    style="border-radius: 50px;
+                                    text-align: center;
+                                    background-color: var(--bmGold);
+                                    color: var(--bmDark);">
+                                        Submit a HYPE Request
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="https://forms.office.com/r/5Rc5Ma5HLT"
+                                    data-bs-toggle="modal"
+                                    class="p-4 m-4 fontSubHeader"
+                                    style="border-radius: 50px;
+                                    text-align: center;
+                                    background-color: var(--bmGold);
+                                    color: var(--bmDark);">
+                                        Rate our services
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 fontHeader"
+                                style="color: var(--bmLight);
+                                text-align: right;">
+                                    FAQ:
+                                </div>
+                                <div class="col-8 fontSubHeader"
+                                style="color: var(--bmLight);
+                                text-align: left;">
+                                    <i>What services does HYPE offer?</i><br/>
+                                    We are a team of graphic designers who can create designs for any student organization's needs, including logos, flyers, apparel, and merchandise.
+                                    <hr/> 
+                                    <i>How early before my event do I need to submit a HYPE request?</i><br/>
+                                    We prefer a minimum of 3 weeks notice, and we recommend to submit your request as early as possible.
+                                    <hr/>
+                                    <i>My designs are not satisfactory</i><br/>
+                                    Please contact us at 
+                                    <a style="color: var(--bmLight) !important;
+                                    text-decoration: underline !important;"
+                                    href=mailto:bullsmedia-director@usf.edu>bullsmedia-director@usf.edu</a>
+                                    and 
+                                    <a style="color: var(--bmLight) !important;
+                                    text-decoration: underline !important;"
+                                    href="https://forms.office.com/r/5Rc5Ma5HLT">submit a feedback form.</a>
+                                    <hr/>
+                                    <i>Do you offer button services?</i><br/>
+                                    We no longer make buttons, but we will provide materials to make them.
+                                </div>
+                            </div>
+                            <div data-bs-target="#serviceCarousel" 
+                            data-bs-slide="next"
+                            class="p-3 col-12"
+                            style="background-color: var(--bmGreen);
+                            text-align: center;
+                            font-size: 2vmax; 
+                            color: var(--bmLight);">
+                                Back to Services
+                                <i class="bi bi-chevron-right">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
                     <div class="carousel-item active">
                         <div id="serviceParent"
                         class="container-fluid row"
@@ -201,7 +288,7 @@
                         justify-content: center;
                         align-items: center;
                         transition: all .382s ease-in-out;
-                        margin-bottom: 15vh;">
+                        padding-bottom: 15vh;">
                             <a id="serviceDJ"
                             class="col-10 m-3"
                             style="display: flex;
@@ -241,7 +328,9 @@
                             background-color: #f9c13a;
                             transition: inherit;
                             overflow: hidden;"
-                            href="https://cglink.me/2k5/s50112">
+                            role="button"
+                            data-bs-target="#serviceCarousel"
+                            data-bs-slide="prev">
                                 <div class="serviceText"
                                 style="position: absolute;
                                 font-family: 'museo-sans', sans-serif;
@@ -260,7 +349,7 @@
                                     HYPE Services
                                 </div>
                             </a>
-                            <a id="serviceProduction"
+                            <a id="serviceBooking"
                             class="col-10 col-lg-5 m-3"
                             style="display: flex;
                             flex-direction: column;
@@ -342,7 +431,7 @@
                                     text-align: center;
                                     background-color: var(--bmGold);
                                     color: var(--bmDark);">
-                                        Learn More!
+                                        Photo Gallery
                                     </a>
                                     <a href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/"
                                     class="col-5 py-3 m-3 ms-auto fontSubHeader"
@@ -381,7 +470,7 @@
                                     text-align: center;
                                     background-color: var(--bmGold);
                                     color: var(--bmDark);">
-                                        Learn More!
+                                        Photo Gallery
                                     </a>
                                     <a href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/"
                                     class="col-5 py-3 m-3 ms-auto fontSubHeader"
@@ -434,7 +523,7 @@
                                     text-align: center;
                                     background-color: var(--bmGold);
                                     color: var(--bmDark);">
-                                        Learn More!
+                                        Photo Gallery
                                     </a>
                                     <a href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/"
                                     class="col-5 py-3 m-3 ms-auto fontSubHeader"
@@ -471,7 +560,7 @@
                                     text-align: center;
                                     background-color: var(--bmGold);
                                     color: var(--bmDark);">
-                                        Learn More!
+                                        Photo Gallery
                                     </a>
                                     <a href="https://outlook.office365.com/owa/calendar/BullsMedia1@usfedu.onmicrosoft.com/bookings/"
                                     class="col-5 py-3 m-3 ms-auto fontSubHeader"
@@ -1313,7 +1402,7 @@
             </div>
         </div>
 
-        <script src="events.js"></script>
+        <script src="events.js" type="module"></script>
         <!-- Bootstrap JS + Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 

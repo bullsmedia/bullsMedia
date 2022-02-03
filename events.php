@@ -1,10 +1,10 @@
 <?php 
 // ensures JSON data is piped through properly and text is parsed as UTF8 to avoid strange errors
 header('Content-Type: application/json; charset=UTF-8');
-$mysqli = new mysqli('localhost', 'webFetch', '[password]', 'bullsmedia_events');
+$mysqli = new mysqli('localhost', 'webFetch', 'password', 'bullsmedia_events');
 // Check db connection
 if ($mysqli->connect_error) {
-    die('Connect Error');
+    die($mysqli->connect_error);
 }
 
 // make the query and echo the result set
@@ -15,18 +15,4 @@ echo json_encode($result->fetch_all());
 $result->free();
 $mysqli->close();
 
-class fetch {
-    // Properties
-    public $name;
-    public $color;
-  
-    // Methods
-    function set_name($name) {
-        $this->name = $name;
-    }
-    function get_name() {
-        return $this->name;
-    }
-}
-  
 ?>
