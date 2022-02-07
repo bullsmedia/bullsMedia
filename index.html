@@ -11,7 +11,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
-    <body style="margin: 0; overflow: hidden;">
+    <body style="margin: 0;">
         
         <!-- Sticky header -->
         <nav class="navbar fixed-top navbar-expand-lg"
@@ -66,110 +66,106 @@
         <!-- Hero image + What We Do -->
         <div id="topBox" 
         style="position: relative;
-        overflow: scroll; 
         scroll-behavior: smooth;">
             <div id="top" style="position: relative; top: -5.5vmax;"></div>
-            <div style="position: relative;
-            height: 100vh;">
-                <!-- Hero image -->
-                <div style="display: flex;
+            <!-- Hero image -->
+            <div style="display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 125vh;
+            background-image: url(res/img/bgTop.webp);
+            background-size: cover;
+            background-position: center;">
+                <img style="position: relative;
+                top: -10vh;
+                width: 35vmax;
+                box-shadow: #000;"
+                src="res/img/fgTop.webp" 
+                alt="The Bulls Media logo"/>
+            </div>
+            <!-- What We Do -->
+            <div style="display: flex;
+            flex-direction: column;
+            align-items: center;">
+                <!-- What we do box -->
+                <div id="what-we-do" style="position: relative; top: -11vmax;"></div>
+                <div class="container-fluid row" 
+                style="display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 position: relative;
                 width: 100%;
-                height: 125vh;
-                background-image: url(res/img/bgTop.webp);
-                background-size: cover;
-                background-position: center;">
-                    <img style="position: relative;
-                    top: -10vh;
-                    width: 35vmax;
-                    box-shadow: #000;"
-                    src="res/img/fgTop.webp" 
-                    alt="The Bulls Media logo"/>
-                </div>
-                <!-- What We Do -->
-                <div style="display: flex;
-                flex-direction: column;
-                align-items: center;">
-                    <!-- What we do box -->
-                    <div id="what-we-do" style="position: relative; top: -11vmax;"></div>
-                    <div class="container-fluid row" 
-                    style="display: flex;
-                    flex-direction: column;
+                background-color: var(--bmGreen);">
+                    <div class="col-4 py-2"
+                    style="z-index: 3;
+                    position: relative;
+                    top: -9vh;
+                    left: -7vw;
+                    display: flex;
                     justify-content: center;
                     align-items: center;
-                    position: relative;
-                    width: 100%;
-                    background-color: var(--bmGreen);">
-                        <div class="col-4 py-2"
-                        style="z-index: 3;
-                        position: relative;
-                        top: -9vh;
-                        left: -7vw;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: var(--bmGreen);
-                        border-radius: 50px;">
-                            <div class="boldText" 
-                            style="font-size: 4vw;
-                            color: var(--bmLight);">
-                                What We Do
-                            </div>
+                    background-color: var(--bmGreen);
+                    border-radius: 50px;">
+                        <div class="boldText" 
+                        style="font-size: 4vw;
+                        color: var(--bmLight);">
+                            What We Do
                         </div>
-                        <div class="col-8 pb-5"
-                        style="position: relative;
-                        top: -11vh;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        border-radius: 50px;
-                        background-color: var(--bmLight);
-                        color: var(--bmDark);
-                        box-shadow: 10px 10px 20px 2px #2226;">
-                            <div class="descText col-9" 
-                            style="font-size: 3.5vmin;
-                            text-align: left;
-                            margin-top: 5vh;">
-                                <b>Bulls Media </b>is a student-run agency 
-                                dedicated to providing services and equipment 
-                                to students from all facets of the media 
-                                landscape, including industry-standard 
-                                <a href="#services">recording hardware and 
-                                software,</a> DJ lessons, MC-ing for events 
-                                on campus, and marketing and promotional 
-                                assistance for USF student organizations.
-                            </div>
-                            <div style="background-color: var(--bmGreen);
-                            border-radius: 50px;"
-                            class="p-5 m-5">
-                                <iframe width="560" height="315" 
-                                src="https://www.youtube-nocookie.com/embed/RzdcRSW7YBg" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                                </iframe>
-                            </div>
-                            <div class="descText col-9" 
-                            style="font-size: 3.5vmin;
-                            text-align: left;">
-                                Our team operates on a simple core mantra: 
-                                students should be able to get real-world 
-                                experience working with peers from many different 
-                                disciplines, and come together to make something 
-                                truly special. Feel free to stop by our office 
-                                any time to meet the staff and see where the 
-                                magic happens! Located on the first floor of 
-                                the MSC, next to the Bull-Pen.
-                            </div>
-                            <img src="res/img/microphone.webp" 
-                            alt="A microphone" 
-                            class="m-5"
-                            style="border-radius: 50px;
-                            width: 25vw;"/>
+                    </div>
+                    <div class="col-8 pb-5"
+                    style="position: relative;
+                    top: -11vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 50px;
+                    background-color: var(--bmLight);
+                    color: var(--bmDark);
+                    box-shadow: 10px 10px 20px 2px #2226;">
+                        <div class="descText col-9" 
+                        style="font-size: 3.5vmin;
+                        text-align: left;
+                        margin-top: 5vh;">
+                            <b>Bulls Media </b>is a student-run agency 
+                            dedicated to providing services and equipment 
+                            to students from all facets of the media 
+                            landscape, including industry-standard 
+                            <a href="#services">recording hardware and 
+                            software,</a> DJ lessons, MC-ing for events 
+                            on campus, and marketing and promotional 
+                            assistance for USF student organizations.
                         </div>
+                        <div style="background-color: var(--bmGreen);
+                        border-radius: 50px;"
+                        class="p-5 m-5">
+                            <iframe width="560" height="315" 
+                            src="https://www.youtube-nocookie.com/embed/RzdcRSW7YBg" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="descText col-9" 
+                        style="font-size: 3.5vmin;
+                        text-align: left;">
+                            Our team operates on a simple core mantra: 
+                            students should be able to get real-world 
+                            experience working with peers from many different 
+                            disciplines, and come together to make something 
+                            truly special. Feel free to stop by our office 
+                            any time to meet the staff and see where the 
+                            magic happens! Located on the first floor of 
+                            the MSC, next to the Bull-Pen.
+                        </div>
+                        <img src="res/img/microphone.webp" 
+                        alt="A microphone" 
+                        class="m-5"
+                        style="border-radius: 50px;
+                        width: 25vw;"/>
                     </div>
                 </div>
             </div>
@@ -179,8 +175,6 @@
         <div style="display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
-        overflow: scroll;
         scroll-behavior: smooth;
         position: relative;">
             <div id="services" style="position: relative; top: -5.5vmax;"></div>
@@ -707,7 +701,6 @@
         align-items: center;
         position: relative;
         height: 100vh;
-        overflow: scroll;
         scroll-behavior: smooth;
         background-color: var(--bmLight);">
             <div id="events" style="position: relative; top: -5.5vmax;"></div>
@@ -739,7 +732,6 @@
         align-items: center;
         position: relative;
         height: 100vh;
-        overflow: scroll;
         scroll-behavior: smooth;
         background-color: var(--bmGold);">
             <div id="get-involved" class="pb-5" style="position: relative; top: -5.5vmax;"></div>
@@ -769,7 +761,6 @@
         <!-- Contact Us -->
         <div style="position: relative;
         height: 100vh;
-        overflow: auto;
         scroll-behavior: smooth;">
             <div id="contact-us" class="pb-5" style="position: relative; top: -5.5vmax;"></div>
             <div style="display: flex;
