@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Bulls Media Update</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="global.css"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link rel="stylesheet" type="text/css" href="https://use.typekit.net/tln6exz.css"/>
+        <!-- Bootstrap CSS only | https://getbootstrap.com/docs/5.0 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <!-- update options -->
+        <div class="row"
+        style="display: flex;
+        justify-content: center;
+        align-items: center;">
+            <a href="#addModal"
+            data-bs-toggle="modal"
+            class="p-4 m-5 fontHeader col-4"
+            style="border-radius: 50px;
+            text-align: center;
+            background-color: var(--bmGold);
+            color: var(--bmDark);">
+                Add an event
+            </a>
+            <a id="deleteModalButton"
+            href="#deleteModal"
+            data-bs-toggle="modal"
+            class="p-4 m-5 fontHeader col-4"
+            style="border-radius: 50px;
+            text-align: center;
+            background-color: var(--bmGold);
+            color: var(--bmDark);">
+                Delete an event
+            </a>
+            <script src="update.js" type="module"></script>
+        </div>
+
+        <!-- current event list -->
+        <div>
+            <div class="mt-4"
+            style="display: block;
+            position: relative;
+            text-align: center;
+            font-size: 4vw;
+            font-family: 'Antapani', Helvetica, sans-serif;">
+                Current Event List
+            </div>
+            <div id="eventParent"
+            style="margin-bottom: 10vh;"
+            class="container-fluid row">
+                <div class="py-5"
+                style="display: block;
+                text-align: center;
+                position: relative;
+                font-size: 2vw;
+                font-family: 'Antapani', Helvetica, sans-serif;">
+                    No Events Listed
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="addModal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered"
+            style="max-width: 95vw !important;">
+                <div class="modal-content" style="border-radius: 50px;">
+                    <div class="modal-header p-3"
+                    data-bs-dismiss="modal">
+                        <div class="modal-title m-auto fontHeader">Add an Event</div>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="deleteModal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered"
+            style="max-width: 95vw !important;">
+                <div class="modal-content" style="border-radius: 50px;">
+                    <div class="modal-header p-3"
+                    data-bs-dismiss="modal">
+                        <div class="modal-title m-auto fontHeader">Delete an Event</div>
+                    </div>
+                    <div class="modal-body">
+                        <div id="eventParentModal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="events.js" type="module"></script>
+        <!-- Bootstrap JS + Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"></script>
+    </body>
+</html>
