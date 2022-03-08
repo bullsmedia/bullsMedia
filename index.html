@@ -197,34 +197,36 @@
                         background-color: var(--bmGreen);
                         border-radius: 50px;
                         overflow: hidden;
-                        width: 85%;">        
-                            <div data-bs-target="#serviceCarousel" 
-                            data-bs-slide="next"
-                            class="p-3 col-12"
-                            style="background-color: var(--bmGreen);
-                            text-align: center;
-                            font-size: 2vmax; 
-                            color: var(--bmLight);">
-                                Back to Services
-                                <i class="bi bi-chevron-right">
-                                </i>
-                            </div>
-                            
-                            <div class="col-12 row">
-                                <div class="col-4 my-auto">
+                        width: 85%;">
+                            <a href="#services">
+                                <div onclick="bootstrap.Carousel.getInstance(document.querySelector('#serviceCarousel')).to(1);"
+                                class="p-3 col-12"
+                                style="background-color: var(--bmGreen);
+                                text-align: center;
+                                font-size: 2vmax; 
+                                color: var(--bmLight);">
+                                    Back to Services
+                                    <i class="bi bi-chevron-right">
+                                    </i>
+                                </div>
+                            </a>
+                            <div class="col-12 row mx-5">
+                                <div class="col-5 my-auto"
+                                style="background-color: var(--bmGold);
+                                border-radius: 50px;">
                                     <img src="res/img/serviceHype.webp"
                                     alt="H.Y.P.E. hero image" 
                                     class="d-block w-100"
                                     style="border-radius: 50px;">
                                 </div>
-                                <div class="col-8 my-auto">
+                                <div class="col-7 my-auto">
                                     <div class="fontSubHeader"
                                     style="color: var(--bmLight);">
                                         <div class="row w-100 p-4 mb-5">
                                             <div class="col-12 my-5">
                                                 <a href="https://cglink.me/2k5/s50112"
                                                 target="_blank"
-                                                class="p-4 fontHeader"
+                                                class="p-4"
                                                 style="border-radius: 50px;
                                                 text-align: center;
                                                 background-color: var(--bmGold);
@@ -235,7 +237,7 @@
                                             <div class="col-12 my-4">
                                                 <a href="https://forms.office.com/r/5Rc5Ma5HLT"
                                                 target="_blank"
-                                                class="p-4 fontHeader"
+                                                class="p-4"
                                                 style="border-radius: 50px;
                                                 text-align: center;
                                                 background-color: var(--bmGold);
@@ -247,7 +249,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row py-5"
+                            style="background-color: rgb(30, 62, 72);">
                                 <div class="col-3 fontHeader"
                                 style="color: var(--bmLight);
                                 text-align: right;">
@@ -293,17 +296,18 @@
 
                                 </div>
                             </div>
-                            <div data-bs-target="#serviceCarousel" 
-                            data-bs-slide="next"
-                            class="p-3 col-12"
-                            style="background-color: var(--bmGreen);
-                            text-align: center;
-                            font-size: 2vmax; 
-                            color: var(--bmLight);">
-                                Back to Services
-                                <i class="bi bi-chevron-right">
-                                </i>
-                            </div>
+                            <a href="#services">
+                                <div onclick="bootstrap.Carousel.getInstance(document.querySelector('#serviceCarousel')).to(1);"
+                                class="p-3 col-12"
+                                style="background-color: var(--bmGreen);
+                                text-align: center;
+                                font-size: 2vmax; 
+                                color: var(--bmLight);">
+                                    Back to Services
+                                    <i class="bi bi-chevron-right">
+                                    </i>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="carousel-item active">
@@ -414,17 +418,18 @@
                     text-align: center;
                     width: 85%;
                     float: none;">
-                        <div data-bs-target="#serviceCarousel" 
-                        data-bs-slide="prev"
-                        class="p-3 col-12"
-                        style="background-color:  /*#e95536*/ var(--bmGreen);
-                        text-align: center;">
-                            <i class="bi bi-chevron-left"
-                            style="font-size: 2vmax; 
-                            color: var(--bmLight);">
-                                Back to Services
-                            </i>
-                        </div>
+                        <a href="#services">
+                            <div onclick="bootstrap.Carousel.getInstance(document.querySelector('#serviceCarousel')).to(1);"
+                            class="p-3 col-12"
+                            style="background-color: var(--bmGreen);
+                            text-align: center;">
+                                <i class="bi bi-chevron-left"
+                                style="font-size: 2vmax; 
+                                color: var(--bmLight);">
+                                    Back to Services
+                                </i>
+                            </div>
+                        </a>
                         <div class="p-4 col-12 row"
                         style="background-color: rgb(77, 133, 123);
                         margin-left: 0 !important;">
@@ -648,17 +653,18 @@
                             </div>
                             
                         </div>
-                        <div data-bs-target="#serviceCarousel" 
-                        data-bs-slide="prev"
-                        class="p-3 col-12"
-                        style="background-color: /*#e95536*/ var(--bmGreen);
-                        text-align: center;">
-                            <i class="bi bi-chevron-left"
-                            style="font-size: 2vmax; 
-                            color: var(--bmLight);">
-                                Back to Services
-                            </i>
-                        </div>
+                        <a href="#services">
+                            <div onclick="bootstrap.Carousel.getInstance(document.querySelector('#serviceCarousel')).to(1);"
+                            class="p-3 col-12"
+                            style="background-color: var(--bmGreen);
+                            text-align: center;">
+                                <i class="bi bi-chevron-left"
+                                style="font-size: 2vmax; 
+                                color: var(--bmLight);">
+                                    Back to Services
+                                </i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
